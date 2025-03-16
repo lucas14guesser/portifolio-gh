@@ -1,6 +1,7 @@
 import React from 'react'
 import { ContainerFooter, LinkItemSocialMediaFooter, LinkPolit, SectionDados, SubContainerCopyPolit, SubcontainerDadosFooter, TextSec, TextSectionDados } from '../../styles/FooterStyles'
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { LinkSocialMedia } from '../../styles/HomePageStyles';
 
 function Footer() {
     return (
@@ -13,12 +14,12 @@ function Footer() {
             <SubcontainerDadosFooter>
                 <SectionDados>
                     <TextSectionDados>Telefone</TextSectionDados>
-                    <TextSec>(48)9 8847-3121</TextSec>
+                    <LinkSocialMedia href="https://api.whatsapp.com/send/?phone=5548988473121&text&type=phone_number&app_absent=0" target='_blank'><TextSec>(48)9 8847-3121</TextSec></LinkSocialMedia>
                 </SectionDados>
 
                 <SectionDados>
                     <TextSectionDados>E-mail</TextSectionDados>
-                    <TextSec>guilherme7hs@gmail.com</TextSec>
+                    <LinkSocialMedia href="mailto:guilherme7hs@gmail.com"><TextSec>guilherme7hs@gmail.com</TextSec></LinkSocialMedia>
                 </SectionDados>
 
                 <SectionDados>

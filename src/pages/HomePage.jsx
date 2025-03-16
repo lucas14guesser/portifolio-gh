@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { BtnDefault, ContainerHomePage, ImgProfile, LinkSocialMedia, SubcontainerBtn, SubcontainerData, SubcontainerDescript, SubcontainerProfile, SubcontainerSocialMedia, TituloProfile, TxtDefault } from '../styles/HomePageStyles';
+import { BtnDefault, ContainerHomePage, ImgProfile, LinkSocialMedia, SubcontainerBtn, SubcontainerData, SubcontainerDescript, SubcontainerProfile, SubcontainerSocialMedia, TextHomeDescript, TituloProfile, TxtDefault } from '../styles/HomePageStyles';
 
 function HomePage() {
     return (
@@ -9,7 +9,7 @@ function HomePage() {
                 <SubcontainerData> {/* container column img name border-bottom role*/}
                     <ImgProfile src="/assets/profileimg.jpg" alt="Foto de perfil" />
 
-                    <TituloProfile style={{ borderBottom: '1px solid #333333', paddingBottom: '1rem' }}>Guilherme H <br />Souza</TituloProfile> {/* border-bottom padding+*/}
+                    <TituloProfile style={{ borderBottom: '1px solid #333333', paddingBottom: '1rem' }}>Guilherme H. <br />Souza</TituloProfile> {/* border-bottom padding+*/}
 
                     <TituloProfile style={{ marginBlockStart: '0' }}>Jornalista</TituloProfile>
                 </SubcontainerData>
@@ -26,15 +26,18 @@ function HomePage() {
             </SubcontainerProfile>
 
             <SubcontainerDescript> {/* container column title words div 2btn descript*/}
-                <TituloProfile>Título</TituloProfile>
-                <TxtDefault>Frase de boas-vindas</TxtDefault>
+                <TituloProfile>Bem-vindos ao meu portfólio!</TituloProfile>
+                <TxtDefault>Esse sou eu!</TxtDefault>
 
                 <SubcontainerBtn> {/* container row*/}
+                    <BtnDefault to='/sobre-mim'>Sobre mim</BtnDefault>
                     <BtnDefault to='/curriculo'>Currículo</BtnDefault>
                     <BtnDefault to='/projetos'>Projetos</BtnDefault>
                 </SubcontainerBtn>
 
-                <p>Aqui deve conter uma breve descrição de você para que as pessoas o conheçam melhor.</p>
+                <TextHomeDescript>
+                    Me chamo Guilherme Henrique Souza, tenho 22 anos e sou assessor de comunicação. No dia a dia, escrevo matérias, roteiros e gravo vídeos. Fora do trabalho, sou gremista fanático, viciado em obras de horror e acompanho One Piece como um verdadeiro "Chapéu de Palha".
+                </TextHomeDescript>
             </SubcontainerDescript>
         </ContainerHomePage>
     )

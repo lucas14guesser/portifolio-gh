@@ -75,3 +75,7 @@ export const BtnDefault = styled(Link)`
     text-align: center;
     font-family: "Poppins", sans-serif;
 `
+export const TextHomeDescript = styled.p`
+    width: 42.6875rem;
+    text-align: justify;
+`

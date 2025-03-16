@@ -5,7 +5,7 @@ function NavBar() {
     return (
         <ContainerNavBar>
             <LinkLogo to='/'>
-                <LogoNav>Guilherme H Souza <RoleLogo>Jornalista</RoleLogo></LogoNav>
+                <LogoNav>Guilherme H. Souza <RoleLogo>Jornalista</RoleLogo></LogoNav>
             </LinkLogo>
             <ListaNav>
                 <LinkItemLista to='/sobre-mim'>
