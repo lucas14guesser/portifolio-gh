@@ -19,6 +19,11 @@ export const LinkLogo = styled(Link)`
     font-family: "Poppins", sans-serif;
     color: #333333;
     margin-left: 1rem;
+    transition: .3s ease-in;
+
+    &:hover {
+        color: #000000;
+    }
 `
 export const LogoNav = styled.p`
     font-size: 1.3rem;
@@ -41,6 +46,11 @@ export const LinkItemLista = styled(Link)`
     font-family: "Poppins", sans-serif;
     color: #333333;
     font-size: 1rem;
+    transition: .3s ease-in;
+
+    &:hover {
+        color: #000000;
+    }
 `
 export const ItemListaNav = styled.li`
     border-right: 1px solid #333333;

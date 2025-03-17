@@ -25,6 +25,11 @@ export const LinkPolit = styled(Link)`
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     margin-left: 1rem;
+    transition: .3s ease-in;
+
+    &:hover {
+        color: #000000;
+    }
 `
 export const TextSec = styled.p`
     font-size: .7rem;
@@ -51,4 +56,9 @@ export const TextSectionDados = styled.p`
 export const LinkItemSocialMediaFooter = styled(Link)`
     text-decoration: none;
     color: #333333;
+    transition: .3s ease-in;
+
+    &:hover {
+        color: #000000;
+    }
 `

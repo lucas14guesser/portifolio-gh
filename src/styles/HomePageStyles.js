@@ -48,6 +48,11 @@ export const SubcontainerSocialMedia = styled.div`
 export const LinkSocialMedia = styled(Link)`
     color: #333333;
     text-decoration: none;
+    transition: .3s ease-in;
+
+    &:hover {
+        color: #000000;
+    }
 `
 export const SubcontainerDescript = styled.div`
     display: flex;
@@ -74,6 +79,11 @@ export const BtnDefault = styled(Link)`
     color: #333333;
     text-align: center;
     font-family: "Poppins", sans-serif;
+    transition: .3s ease-in;
+
+    &:hover {
+        color: #000000;
+    }
 `
 export const TextHomeDescript = styled.p`
     width: 42.6875rem;

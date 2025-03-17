@@ -1,6 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components";
-
-export const GlobalStyles = createGlobalStyle`
+import{f as a,d as o}from"./styled-components.browser.esm-DTIBfui1.js";const r=a`
     body, html, #root {
         margin: 0;
         padding: 0;
@@ -20,19 +18,16 @@ export const GlobalStyles = createGlobalStyle`
             color: #333333;
         }
     }
-`
-export const Paginacao = styled.div`
+`,s=o.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: .3rem;
-`
-export const TxtPaginacao = styled.span`
+`,t=o.span`
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
-`
-export const PagBtn = styled.button`
+`,i=o.button`
     text-align: center;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
@@ -46,4 +41,4 @@ export const PagBtn = styled.button`
     &:disabled {
         opacity: .5;
     }
-`
+`;export{r as G,s as P,t as T,i as a};
