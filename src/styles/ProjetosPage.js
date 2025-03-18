@@ -52,6 +52,10 @@ export const LinkMaterias = styled(Link)`
     color: #333333;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
+
+    &:hover {
+        color: #000000;
+    }
 `
 export const ImgsProjetos= styled.img`
     width: 100%;

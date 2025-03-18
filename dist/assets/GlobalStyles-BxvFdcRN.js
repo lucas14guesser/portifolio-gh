@@ -1,4 +1,4 @@
-import{f as a,d as o}from"./styled-components.browser.esm-DTIBfui1.js";const r=a`
+import{f as a,d as o}from"./styled-components.browser.esm-BNWIvhS-.js";const r=a`
     body, html, #root {
         margin: 0;
         padding: 0;

@@ -90,6 +90,19 @@ function ProjetosPage() {
     },
   ];
 
+  const videos = [
+    {
+      title: "Titulo",
+      descript: [
+        "Descrição"
+      ],
+      materia: [
+        "Matéria"
+      ],
+      video: "/assets/videos/cultura.mp4"
+    },
+  ];
+
   const [paginaAtual, setPaginaAtual] = useState(0);
   const itensPorPagina = 1;
   const totalPaginas = Math.ceil(materias.length / itensPorPagina);
@@ -97,6 +110,15 @@ function ProjetosPage() {
   const materiasPaginadas = materias.slice(
     paginaAtual * itensPorPagina,
     (paginaAtual + 1) * itensPorPagina
+  );
+
+  const [paginaAtualVideo, setPaginaAtualVideo] = useState(0);
+  const itensPorPaginaVideo = 1;
+  const totalPaginasVideo = Math.ceil(videos.length / itensPorPaginaVideo);
+
+  const VideosPaginados = videos.slice(
+    paginaAtualVideo * itensPorPaginaVideo,
+    (paginaAtualVideo + 1) * itensPorPaginaVideo
   );
 
   return (
@@ -109,6 +131,8 @@ function ProjetosPage() {
         </TextDefaultProjetos>
       </SubcontainerTextsProjetos>
 
+      <TextDefaultProjetos style={{ fontSize: '1.2rem' }}>Matérias</TextDefaultProjetos>
+
       {materiasPaginadas.map((materia, index) => (
         <SubcontainerTextsImgProjetos key={index}> {/* row */}
           <SubcontainerTextsDescriptProjetos> {/* column text */}
@@ -119,7 +143,7 @@ function ProjetosPage() {
           </SubcontainerTextsDescriptProjetos>
 
           <SubcontainerImgsProjetos> {/* img */}
-            <ImgsProjetos src={materia.image} alt={materia.altimage}/>
+            <ImgsProjetos src={materia.image} alt={materia.altimage} />
           </SubcontainerImgsProjetos>
         </SubcontainerTextsImgProjetos>
       ))}
@@ -132,6 +156,36 @@ function ProjetosPage() {
           Matéria {paginaAtual + 1} de {totalPaginas}
         </TxtPaginacao>
         <PagBtn onClick={() => setPaginaAtual(paginaAtual + 1)} disabled={paginaAtual === totalPaginas - 1}>
+          Próxima
+        </PagBtn>
+      </Paginacao>
+
+      <TextDefaultProjetos style={{ fontSize: '1.2rem' }}>Vídeos</TextDefaultProjetos>
+
+      {VideosPaginados.map((video, index) => (
+        <SubcontainerTextsImgProjetos key={index}> {/* row */}
+          <SubcontainerTextsDescriptProjetos> {/* column text */}
+            <TituloTextDescriptProjetos>{video.title}</TituloTextDescriptProjetos>
+            <TextDefaultProjetos>{video.descript}</TextDefaultProjetos>
+            <TextDefaultProjetos>{video.materia}</TextDefaultProjetos>
+          </SubcontainerTextsDescriptProjetos>
+
+          <SubcontainerImgsProjetos> {/* img */}
+            <VideoProjetos controls key={video.video}>
+              <source src={video.video} />
+            </VideoProjetos>
+          </SubcontainerImgsProjetos>
+        </SubcontainerTextsImgProjetos>
+      ))}
+
+      <Paginacao>
+        <PagBtn onClick={() => setPaginaAtualVideo(paginaAtualVideo - 1)} disabled={paginaAtualVideo === 0}>
+          Anterior
+        </PagBtn>
+        <TxtPaginacao>
+          Vídeo {paginaAtualVideo + 1} de {totalPaginasVideo}
+        </TxtPaginacao>
+        <PagBtn onClick={() => setPaginaAtualVideo(paginaAtualVideo + 1)} disabled={paginaAtualVideo === totalPaginasVideo - 1}>
           Próxima
         </PagBtn>
       </Paginacao>

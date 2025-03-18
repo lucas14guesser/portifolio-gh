@@ -14,7 +14,6 @@ export default defineConfig({
         projetosPage: resolve(__dirname, './src/pages/ProjetosPage.jsx'),
         sobreMimPage: resolve(__dirname, './src/pages/SobreMimPage.jsx'),
         contatoPage: resolve(__dirname, './src/pages/ContatoPage.jsx'),
-        politicaPrivacidadePage: resolve(__dirname, './src/pages/PoliticaPrivacidadePage.jsx'),
       }
     }
   }

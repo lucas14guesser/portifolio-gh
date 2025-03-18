@@ -7,7 +7,6 @@ function Footer() {
     return (
         <ContainerFooter>
             <SubContainerCopyPolit>
-                <LinkPolit to='/politica-de-privacidade'>Política de privacidade</LinkPolit>
                 <TextSec>&copy; Todos os direitos reservados</TextSec>
             </SubContainerCopyPolit>
 
