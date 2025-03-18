@@ -26,24 +26,23 @@ export const SubcontainerTextsImg = styled.div`
     flex-direction: row;
     width: 100%;
     background-color: #EAEAEA;
-    gap: 2rem;
 `
 export const SubcontainerTextsDescript = styled.div`
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     padding: 1rem;
     gap: 1rem;
 `
 export const SubcontainerImgs = styled.div`
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
 `
 export const TituloTextDescript = styled.p`
     font-size: 1.3rem;
 `
 export const ImgsSobreMim = styled.img`
     width: 100%;
-    height: 35rem;
+    height: 45rem;
 `

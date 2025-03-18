@@ -104,11 +104,11 @@ function CurriculoPage() {
         </SubcontainerDataCurriculo>
       ))}
 
-      <Paginacao style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+      <Paginacao>
         <PagBtn onClick={() => setPaginaAtual(paginaAtual - 1)} disabled={paginaAtual === 0}>
           Anterior
         </PagBtn>
-        <TxtPaginacao style={{ margin: '0 10px' }}>
+        <TxtPaginacao>
           Experiência {paginaAtual + 1} de {totalPaginas}
         </TxtPaginacao>
         <PagBtn onClick={() => setPaginaAtual(paginaAtual + 1)} disabled={paginaAtual === totalPaginas - 1}>

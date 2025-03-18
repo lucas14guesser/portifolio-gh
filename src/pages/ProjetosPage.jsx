@@ -1,8 +1,142 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { ContainerProjetosPage, ImgsProjetos, LinkMaterias, SubcontainerImgsProjetos, SubcontainerTextsDescriptProjetos, SubcontainerTextsImgProjetos, SubcontainerTextsProjetos, TextDefaultProjetos, TitlePageProjetos, TituloTextDescriptProjetos, VideoProjetos } from '../styles/ProjetosPage'
+import { PagBtn, Paginacao, TxtPaginacao } from '../styles/GlobalStyles';
 
 function ProjetosPage() {
+  const materias = [
+    {
+      title: "Casa do Terror",
+      descript: [
+        "Casa do Terror retorna no domingo (10) a São José para uma tarde de sustos e diversão"
+      ],
+      materia: [
+        "Evento promete experiências imersivas e muitas surpresas no Museu Gilberto Gerlach"
+      ],
+      linkMateria: "https://saojose.sc.gov.br/casa-do-terror-retorna-neste-domingo-10-a-sao-jose-para-uma-tarde-de-sustos-e-diversao/70819/",
+      image: "/assets/materias/casa-terror.png",
+      altimage: 'Museu histórico SJ'
+    },
+    {
+      title: "Emissão de IPTU",
+      descript: [
+        "Centro de Atendimento ao Cidadão recebe em média 150 pessoas por dia"
+      ],
+      materia: [
+        "Serviço conta com 25 funcionários para atender demandas como emissão de IPTU, atendimento empresarial, ITBI e abertura de processos"
+      ],
+      linkMateria: "https://saojose.sc.gov.br/centro-de-atendimento-ao-cidadao-recebe-em-media-150-pessoas-por-dia-2/33893/",
+      image: "/assets/materias/cac.png",
+      altimage: 'Imagem do CAC'
+    },
+    {
+      title: "Vôlei de Praia",
+      descript: [
+        "Atleta de Vôlei de Praia de São José participa há 24 anos do JASC"
+      ],
+      materia: [
+        "Ceará coleciona 14 medalhas de ouro e cinco de prata nos Jogos Abertos de Santa Catarina"
+      ],
+      linkMateria: "https://saojose.sc.gov.br/atleta-de-volei-de-praia-de-sao-jose-participa-ha-24-anos-do-jasc/30316/",
+      image: "/assets/materias/volei-praia.png",
+      altimage: 'Imagem vôlei de praia'
+    },
+    {
+      title: "São José já sonha com as Olimpíadas",
+      descript: [
+        "Atleta destaque de São José já sonha com Olimpíadas 2024"
+      ],
+      materia: [
+        "Medalhista de ouro recordista no lançamento de disco Wellinton Fernandes, 24 anos, revela história de superação na luta em manter-se como atleta"
+      ],
+      linkMateria: "https://saojose.sc.gov.br/atleta-destaque-de-sao-jose-ja-sonha-com-olimpiadas-2024/31611/",
+      image: "/assets/materias/atletismo.png",
+      altimage: 'Imagem de Wellinton Fernandes'
+    },
+    {
+      title: "Time de Handebol",
+      descript: [
+        "Time de Handebol de São José entra em quadra com reforços em 2023"
+      ],
+      materia: [
+        "Técnicos da modalidade trabalham rumo à Liga Nacional e Campeonato Brasileiro"
+      ],
+      linkMateria: "https://saojose.sc.gov.br/time-de-handebol-de-sao-jose-entra-em-quadra-com-reforcos-em-2023/35390/",
+      image: "/assets/materias/time-handebol.png",
+      altimage: 'Imagem do cenário do time de handebol'
+    },
+    {
+      title: "Vôlei de mãe para filho",
+      descript: [
+        "Quando o vôlei é de mãe para filho"
+      ],
+      materia: [
+        "Conheça a história da professora e atleta que pretende manter os treinos durante a gestação"
+      ],
+      linkMateria: "https://saojose.sc.gov.br/quando-o-volei-e-de-mae-para-filho/39179/",
+      image: "/assets/materias/volei-mae-filho.png",
+      altimage: 'Imagem de um casal jogadores de vòlei esperando um filho'
+    },
+    {
+      title: "São José e Atlético Catarinense",
+      descript: [
+        "São José confirma parceria no projeto do Atlético Catarinense"
+      ],
+      materia: [
+        "Em visita ao prefeito Orvino, Romário pede apoio logístico para treinamentos da equipe"
+      ],
+      linkMateria: "https://saojose.sc.gov.br/sao-jose-confirma-parceria-no-projeto-do-atletico-catarinense/30393/",
+      image: "/assets/materias/atletico-cat.png",
+      altimage: 'Imagem da reunião do prefeito Orvino com Romário'
+    },
+  ];
+
+  const [paginaAtual, setPaginaAtual] = useState(0);
+  const itensPorPagina = 1;
+  const totalPaginas = Math.ceil(materias.length / itensPorPagina);
+
+  const materiasPaginadas = materias.slice(
+    paginaAtual * itensPorPagina,
+    (paginaAtual + 1) * itensPorPagina
+  );
+
   return (
-    <div>ProjetosPage</div>
+    <ContainerProjetosPage>
+      <TitlePageProjetos>Projetos</TitlePageProjetos>
+
+      <SubcontainerTextsProjetos>
+        <TextDefaultProjetos>
+          Boas-vindas a minha página de projetos. Aqui poderão ser vistos todos os projetos que participei incluindo matérias que escrevi, entrevistas que fiz e vídeos que participei e ou editei.
+        </TextDefaultProjetos>
+      </SubcontainerTextsProjetos>
+
+      {materiasPaginadas.map((materia, index) => (
+        <SubcontainerTextsImgProjetos key={index}> {/* row */}
+          <SubcontainerTextsDescriptProjetos> {/* column text */}
+            <TituloTextDescriptProjetos>{materia.title}</TituloTextDescriptProjetos>
+            <TextDefaultProjetos>{materia.descript}</TextDefaultProjetos>
+            <TextDefaultProjetos>{materia.materia}</TextDefaultProjetos>
+            <LinkMaterias to={materia.linkMateria} target='_blank'>Link da matéria</LinkMaterias>
+          </SubcontainerTextsDescriptProjetos>
+
+          <SubcontainerImgsProjetos> {/* img */}
+            <ImgsProjetos src={materia.image} alt={materia.altimage}/>
+          </SubcontainerImgsProjetos>
+        </SubcontainerTextsImgProjetos>
+      ))}
+
+      <Paginacao>
+        <PagBtn onClick={() => setPaginaAtual(paginaAtual - 1)} disabled={paginaAtual === 0}>
+          Anterior
+        </PagBtn>
+        <TxtPaginacao>
+          Matéria {paginaAtual + 1} de {totalPaginas}
+        </TxtPaginacao>
+        <PagBtn onClick={() => setPaginaAtual(paginaAtual + 1)} disabled={paginaAtual === totalPaginas - 1}>
+          Próxima
+        </PagBtn>
+      </Paginacao>
+
+    </ContainerProjetosPage>
   )
 }
 
