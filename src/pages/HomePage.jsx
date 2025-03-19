@@ -36,7 +36,7 @@ function HomePage() {
                 </SubcontainerBtn>
 
                 <TextHomeDescript>
-                    Me chamo Guilherme Henrique Souza, tenho 22 anos e sou assessor de comunicação. No dia a dia, escrevo matérias, roteiros e gravo vídeos. Fora do trabalho, sou gremista fanático, viciado em obras de horror e acompanho One Piece como um verdadeiro "Chapéu de Palha".
+                    Me chamo Guilherme Henrique Souza, tenho 22 anos, sou formado em jornalismo pela Unisul e sou assessor de comunicação. No dia a dia, escrevo matérias, roteiros e gravo vídeos. Fora do trabalho, sou um padrinho babão, gremista fanático, viciado em obras de terror, chop de vinho e acompanho One Piece como um verdadeiro "Chapéu de Palha".
                 </TextHomeDescript>
             </SubcontainerDescript>
         </ContainerHomePage>
