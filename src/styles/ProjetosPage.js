@@ -21,6 +21,7 @@ export const SubcontainerTextsProjetos = styled.div`
 export const TextDefaultProjetos = styled.p`
     text-align: justify;
     font-size: 1rem;
+    white-space: pre-line;
 `
 export const SubcontainerTextsImgProjetos = styled.div`
     display: flex;
@@ -33,7 +34,6 @@ export const SubcontainerTextsDescriptProjetos = styled.div`
     flex-direction: column;
     width: 60%;
     padding: 1rem;
-    gap: 1rem;
 `
 export const SubcontainerImgsProjetos = styled.div`
     display: flex;
@@ -45,7 +45,7 @@ export const TituloTextDescriptProjetos = styled.p`
 `
 export const VideoProjetos = styled.video`
     width: 100%;
-    height: 35rem;
+    height: 100%;
 `
 export const LinkMaterias = styled(Link)`
     text-decoration: underline;
@@ -60,4 +60,25 @@ export const LinkMaterias = styled(Link)`
 export const ImgsProjetos= styled.img`
     width: 100%;
     height: 30rem;
+`
+export const SubcontainerImgs = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 5px;
+  height: 35rem;
+`
+export const ImgMini = styled.img`
+  width: ${({ imagesCount }) => (imagesCount === 1 ? '100%' : imagesCount === 2 ? '70%' : '30%')}; 
+  height: 15rem;
+  border: 1px solid #333;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.7);
+  }
 `
