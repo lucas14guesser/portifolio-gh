@@ -94,7 +94,7 @@ function ProjetosPage() {
     {
       title: "Terrifier",
       descript: [
-        "Projeto Pessoas de Cosplay"
+        "Projeto Pessoal de Cosplay"
       ],
       materia: [
         "terrifier day 🤡\n\n" +
@@ -107,7 +107,7 @@ function ProjetosPage() {
     {
       title: "Terrifier",
       descript: [
-        "Projeto Pessoas de Cosplay"
+        "Projeto Pessoal de Cosplay"
       ],
       materia: [
         "terrifier day 🤡\n\n" +
@@ -336,7 +336,7 @@ function ProjetosPage() {
         "CAPTAÇÃO DE IMAGENS/COBERTURA DE EVENTOS"
       ],
       materia: [
-        "A magia do Natal chegou com tudo na cidade! A Caravana da Coca-Cola trouxe alegria e brilho para as ruas. Se você perdeu, não se preocupe: a Casa do Papai Noel no Centro Histórico abre suas portas neste sábado, às 19h, com uma decoração encantadora e um espetáculo de luzes!"
+        "A magia do Natal chegou com tudo na cidade! A Caravana da Coca-Cola trouxe alegria e brilho para as ruas. Se você perdeu, não se preocupe: a Casa do Papai Noel no Centro Histórico abre suas portas neste sábado, às 19h, com uma decoração encantadora e um espetáculo de luzes! 🎄"
       ],
       video: "/assets/videos/VÍDEO-20.mp4"
     },
@@ -519,7 +519,8 @@ function ProjetosPage() {
         "Neymar Passa em São José para ver ensaio do Jardim das Palmeiras"
       ],
       materia: [
-        "Que tal fazer igual ao Neymar e ir curtir o ensaio da escola de samba Jardim das Palmeiras? 🥁 O próximo ensaio ao ar livre acontece nesta segunda (3), às 20h30, na praça Adriano de Farias, em Forquilhinhas. Vamos vibrar com a escola de samba que representa São José na passarela Nego Quiridu! 💚"
+        "Que tal fazer igual ao Neymar e ir curtir o ensaio da escola de samba Jardim das Palmeiras? 🥁 O próximo ensaio ao ar livre acontece nesta segunda (3), às 20h30, na praça Adriano de Farias, em Forquilhinhas. Vamos vibrar com a escola de samba que representa São José na passarela Nego Quiridu! 💚\n\n" +
+        "Acompanhe a agenda no @jardimdaspalmeirasoriginal! 😉"
       ],
       image: "/assets/fotos/foto-8.png",
       altimage: 'Foto Neymar no carnaval em SJ',
@@ -559,7 +560,7 @@ function ProjetosPage() {
 
       <SubcontainerTextsProjetos>
         <TextDefaultProjetos>
-          Boas-vindas a minha página de projetos. Aqui poderão ser vistos todos os projetos que participei incluindo matérias que escrevi, entrevistas que fiz e vídeos que participei e ou editei.
+          Boas-vindas à minha página de projetos! Aqui você pode ver todos os projetos dos quais participei, incluindo matérias que escrevi, entrevistas que realizei e vídeos nos quais atuei ou editei.
         </TextDefaultProjetos>
       </SubcontainerTextsProjetos>
 
