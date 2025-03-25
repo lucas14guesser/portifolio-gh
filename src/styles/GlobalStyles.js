@@ -31,6 +31,10 @@ export const Paginacao = styled.div`
 export const TxtPaginacao = styled.span`
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
+
+    @media (max-width: 430px) {
+        font-size: .5rem;
+    }
 `
 export const PagBtn = styled.button`
     text-align: center;
@@ -45,5 +49,11 @@ export const PagBtn = styled.button`
 
     &:disabled {
         opacity: .5;
+    }
+
+    @media (max-width: 430px) {
+        font-size: .5rem;
+        width: 4rem;
+        padding: .1rem;
     }
 `

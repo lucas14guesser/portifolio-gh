@@ -10,6 +10,10 @@ export const ContainerHomePage = styled.div`
     );
     width: 100vw;
     height: 100vh;
+
+    @media (max-width: 430px) {
+        gap: 1rem;
+    }
 `
 export const SubcontainerProfile = styled.div`
     display: flex;
@@ -19,6 +23,11 @@ export const SubcontainerProfile = styled.div`
     background-color: #EAEAEA;
     margin-left: 26rem;
     width: 20rem;
+
+    @media (max-width: 430px) {
+        margin-left: 2.5rem;
+        width: 12rem;
+    }
 `
 export const SubcontainerData = styled.div`
     display: flex;
@@ -31,9 +40,18 @@ export const ImgProfile = styled.img`
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
+
+    @media (max-width: 430px) {
+        width: 7rem;
+        height: 7rem;
+    }
 `
 export const TituloProfile = styled.h1`
     font-size: 1.2rem;
+
+    @media (max-width: 430px) {
+        font-size: .8rem;
+    }
 `
 export const SubcontainerSocialMedia = styled.div`
     display: flex;
@@ -61,12 +79,20 @@ export const SubcontainerDescript = styled.div`
 `
 export const TxtDefault = styled.p`
     font-size: 1rem;
+
+    @media (max-width: 430px) {
+        font-size: .5rem;
+    }
 `
 export const SubcontainerBtn = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+
+    @media (max-width: 430px) {
+        gap: .3rem;
+    }
 `
 export const BtnDefault = styled(Link)`
     width: 7rem;
@@ -84,8 +110,18 @@ export const BtnDefault = styled(Link)`
     &:hover {
         color: #000000;
     }
+
+    @media (max-width: 430px) {
+        width: 2.1rem;
+        font-size: .385rem;
+    }
 `
 export const TextHomeDescript = styled.p`
     width: 42.6875rem;
     text-align: justify;
+
+    @media (max-width: 430px) {
+        width: 9rem;
+        font-size: .5rem;
+    }
 `

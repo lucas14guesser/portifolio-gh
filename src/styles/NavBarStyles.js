@@ -13,6 +13,10 @@ export const ContainerNavBar = styled.nav`
 
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 430px) {
+        padding: .5rem 0;
+    }
 `
 export const LinkLogo = styled(Link)`
     text-decoration: none;
@@ -24,9 +28,17 @@ export const LinkLogo = styled(Link)`
     &:hover {
         color: #000000;
     }
+
+    @media (max-width: 430px) {
+        margin-left: .5rem;
+    }
 `
 export const LogoNav = styled.p`
     font-size: 1.3rem;
+
+    @media (max-width: 430px) {
+        font-size: .7rem;
+    }
 `
 export const RoleLogo = styled.span`
     font-size: 1.1rem;
@@ -34,6 +46,10 @@ export const RoleLogo = styled.span`
     opacity: .5;
     border-left: 1px solid #333333;
     padding-left: .5rem;
+
+    @media (max-width: 430px) {
+        font-size: .5rem;
+    }
 `
 export const ListaNav = styled.ul`
     display: flex;
@@ -51,9 +67,18 @@ export const LinkItemLista = styled(Link)`
     &:hover {
         color: #000000;
     }
+
+    @media (max-width: 430px) {
+        font-size: .385rem;
+    }
 `
 export const ItemListaNav = styled.li`
     border-right: 1px solid #333333;
     padding-right: .5rem;
     padding-left: .5rem;
+
+    @media (max-width: 430px) {
+        padding-right: .3rem;
+        padding-left: .3rem;
+    }
 `

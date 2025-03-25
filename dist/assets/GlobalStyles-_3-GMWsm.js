@@ -18,16 +18,20 @@ import{f as a,d as o}from"./styled-components.browser.esm-BNWIvhS-.js";const r=a
             color: #333333;
         }
     }
-`,s=o.div`
+`,e=o.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: .3rem;
-`,t=o.span`
+`,n=o.span`
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
-`,i=o.button`
+
+    @media (max-width: 430px) {
+        font-size: .5rem;
+    }
+`,t=o.button`
     text-align: center;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
@@ -41,4 +45,10 @@ import{f as a,d as o}from"./styled-components.browser.esm-BNWIvhS-.js";const r=a
     &:disabled {
         opacity: .5;
     }
-`;export{r as G,s as P,t as T,i as a};
+
+    @media (max-width: 430px) {
+        font-size: .5rem;
+        width: 4rem;
+        padding: .1rem;
+    }
+`;export{r as G,e as P,n as T,t as a};

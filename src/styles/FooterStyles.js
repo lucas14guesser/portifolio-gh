@@ -13,6 +13,10 @@ export const ContainerFooter = styled.footer`
 
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 430px) {
+        padding: .5rem 0;
+    }
 `
 export const SubContainerCopyPolit = styled.div`
     display: flex;
@@ -35,6 +39,10 @@ export const TextSec = styled.p`
     font-size: .7rem;
     margin-block-start: 0px;
     margin-block-end: 0px;
+
+    @media (max-width: 430px) {
+        font-size: .385rem;
+    }
 `
 export const SubcontainerDadosFooter = styled.div`
     display: flex;
@@ -42,6 +50,11 @@ export const SubcontainerDadosFooter = styled.div`
     align-items: center;
     gap: 3rem;
     margin-right: 1rem;
+
+    @media (max-width: 430px) {
+        gap: .5rem;
+        margin-right: .3rem;
+    }
 `
 export const SectionDados = styled.div`
     display: flex;
@@ -52,6 +65,10 @@ export const TextSectionDados = styled.p`
     font-size: 1rem;
     margin-block-start: 0px;
     margin-block-end: 0px;
+
+    @media (max-width: 430px) {
+        font-size: .7rem;
+    }
 `
 export const LinkItemSocialMediaFooter = styled(Link)`
     text-decoration: none;

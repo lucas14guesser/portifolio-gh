@@ -7,6 +7,11 @@ export const ContainerCurriculoPage = styled.div`
     justify-content: center;
     margin: 7rem 30rem;
     gap: 3rem;
+
+    @media (max-width: 430px) {
+        margin: 7rem 2rem;
+        gap: 1rem;
+    }
 `
 export const SubcontainerTitleBtnCV = styled.div`
     display: flex;
@@ -16,9 +21,17 @@ export const SubcontainerTitleBtnCV = styled.div`
 `
 export const TitlePageCurriculo = styled.h1`
     text-align: center;
+
+    @media (max-width: 430px) {
+        font-size: .7rem;
+    }
 `
 export const TitleCurriculo = styled.p`
     font-size: 1.3rem;
+
+    @media (max-width: 430px) {
+        font-size: .7rem;
+    }
 `
 export const LinkCV = styled.a`
     text-decoration: none;
@@ -31,6 +44,12 @@ export const LinkCV = styled.a`
     font-size: .9rem;
     width: 7rem;
     text-align: center;
+
+    @media (max-width: 430px) {
+        font-size: .5rem;
+        padding: .3rem;
+        width: 4rem;
+    }
 `
 export const SubcontainerDataCurriculo = styled.div`
     display: flex;
@@ -41,6 +60,11 @@ export const SubcontainerDataCurriculo = styled.div`
     border: 1px solid #333333;
     width: 100%;
     height: 20rem;
+
+    @media (max-width: 430px) {
+        width: 92%;
+        height: 15rem;
+    }
 `
 export const SubcontainerDataText = styled.div`
     display: flex;
@@ -48,16 +72,28 @@ export const SubcontainerDataText = styled.div`
     align-items: flex-start;
     gap: 1rem;
     width: 50%;
+
+    @media (max-width: 430px) {
+        font-size: .7rem;
+    }
 `
 export const TextTitleDate = styled.p`
     font-size: 1.1rem;
     margin-block-start: 0px;
     margin-block-end: 0px;
+
+    @media (max-width: 430px) {
+        font-size: .8rem;
+    }
 `
 export const TextDefaultCurriculo = styled.p`
     font-size: 1rem;
     margin-block-start: 0px;
     margin-block-end: 0px;
+
+    @media (max-width: 430px) {
+        font-size: .6rem;
+    }
 `
 export const SUbcontainerDescript = styled.div`
     display: flex;
@@ -65,4 +101,8 @@ export const SUbcontainerDescript = styled.div`
     margin-top: 2.7rem;
     gap: 1rem;
     width: 50%;
+
+    @media (max-width: 430px) {
+        margin-top: 3.3rem;
+    }
 `
