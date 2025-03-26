@@ -17,6 +17,14 @@ export const ContainerNavBar = styled.nav`
     @media (max-width: 430px) {
         padding: .5rem 0;
     }
+    
+    @media (min-width: 431px) and (max-width: 600px) {
+        padding: .5rem 0;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        padding: .7rem 0;
+    }
 `
 export const LinkLogo = styled(Link)`
     text-decoration: none;
@@ -32,12 +40,28 @@ export const LinkLogo = styled(Link)`
     @media (max-width: 430px) {
         margin-left: .5rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        margin-left: .7rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        margin-left: .9rem;
+    }
 `
 export const LogoNav = styled.p`
     font-size: 1.3rem;
 
     @media (max-width: 430px) {
         font-size: .7rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: 1.1rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: 1.1rem;
     }
 `
 export const RoleLogo = styled.span`
@@ -49,6 +73,14 @@ export const RoleLogo = styled.span`
 
     @media (max-width: 430px) {
         font-size: .5rem;
+    }
+    
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .9rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
     }
 `
 export const ListaNav = styled.ul`
@@ -71,6 +103,14 @@ export const LinkItemLista = styled(Link)`
     @media (max-width: 430px) {
         font-size: .385rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .7rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
+    }
 `
 export const ItemListaNav = styled.li`
     border-right: 1px solid #333333;
@@ -78,6 +118,16 @@ export const ItemListaNav = styled.li`
     padding-left: .5rem;
 
     @media (max-width: 430px) {
+        padding-right: .3rem;
+        padding-left: .3rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        padding-right: .3rem;
+        padding-left: .3rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
         padding-right: .3rem;
         padding-left: .3rem;
     }

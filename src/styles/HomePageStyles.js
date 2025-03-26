@@ -14,6 +14,14 @@ export const ContainerHomePage = styled.div`
     @media (max-width: 430px) {
         gap: 1rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        gap: 1rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        gap: 1rem;
+    }
 `
 export const SubcontainerProfile = styled.div`
     display: flex;
@@ -27,6 +35,16 @@ export const SubcontainerProfile = styled.div`
     @media (max-width: 430px) {
         margin-left: 2.5rem;
         width: 12rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        margin-left: 5rem;
+        width: 12rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        margin-left: 7rem;
+        width: 15rem;
     }
 `
 export const SubcontainerData = styled.div`
@@ -45,12 +63,30 @@ export const ImgProfile = styled.img`
         width: 7rem;
         height: 7rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        width: 9rem;
+        height: 9rem;
+    }
 `
 export const TituloProfile = styled.h1`
     font-size: 1.2rem;
 
     @media (max-width: 430px) {
         font-size: .8rem;
+    }
+    
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .9rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: 1.1rem;
     }
 `
 export const SubcontainerSocialMedia = styled.div`
@@ -83,6 +119,14 @@ export const TxtDefault = styled.p`
     @media (max-width: 430px) {
         font-size: .5rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .8rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
+    }
 `
 export const SubcontainerBtn = styled.div`
     display: flex;
@@ -92,6 +136,14 @@ export const SubcontainerBtn = styled.div`
 
     @media (max-width: 430px) {
         gap: .3rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        gap: .5rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        gap: .7rem;
     }
 `
 export const BtnDefault = styled(Link)`
@@ -115,6 +167,16 @@ export const BtnDefault = styled(Link)`
         width: 2.1rem;
         font-size: .385rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        width: 4rem;
+        font-size: .7rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        width: 6rem;
+        font-size: .9rem;
+    }
 `
 export const TextHomeDescript = styled.p`
     width: 42.6875rem;
@@ -123,5 +185,15 @@ export const TextHomeDescript = styled.p`
     @media (max-width: 430px) {
         width: 9rem;
         font-size: .5rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        width: 15rem;
+        font-size: .7rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        width: 20rem;
+        font-size: .9rem;
     }
 `

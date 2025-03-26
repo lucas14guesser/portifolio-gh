@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ContainerCurriculoPage = styled.div`
@@ -11,6 +10,15 @@ export const ContainerCurriculoPage = styled.div`
     @media (max-width: 430px) {
         margin: 7rem 2rem;
         gap: 1rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        margin: 7rem 4rem;
+        gap: 1rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        margin: 7rem 6rem;
     }
 `
 export const SubcontainerTitleBtnCV = styled.div`
@@ -25,12 +33,28 @@ export const TitlePageCurriculo = styled.h1`
     @media (max-width: 430px) {
         font-size: .7rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: 1.1rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: 1.5rem;
+    }
 `
 export const TitleCurriculo = styled.p`
     font-size: 1.3rem;
 
     @media (max-width: 430px) {
         font-size: .7rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .9rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
     }
 `
 export const LinkCV = styled.a`
@@ -50,6 +74,18 @@ export const LinkCV = styled.a`
         padding: .3rem;
         width: 4rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .7rem;
+        padding: .5rem;
+        width: 6rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .8rem;
+        padding: .5rem;
+        width: 7rem;
+    }
 `
 export const SubcontainerDataCurriculo = styled.div`
     display: flex;
@@ -65,6 +101,15 @@ export const SubcontainerDataCurriculo = styled.div`
         width: 92%;
         height: 15rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        width: 92%;
+        height: 15rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        width: 95%;
+    }
 `
 export const SubcontainerDataText = styled.div`
     display: flex;
@@ -76,6 +121,14 @@ export const SubcontainerDataText = styled.div`
     @media (max-width: 430px) {
         font-size: .7rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .7rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
+    }
 `
 export const TextTitleDate = styled.p`
     font-size: 1.1rem;
@@ -85,6 +138,14 @@ export const TextTitleDate = styled.p`
     @media (max-width: 430px) {
         font-size: .8rem;
     }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .8rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
+    }
 `
 export const TextDefaultCurriculo = styled.p`
     font-size: 1rem;
@@ -93,6 +154,14 @@ export const TextDefaultCurriculo = styled.p`
 
     @media (max-width: 430px) {
         font-size: .6rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .7rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .8rem;
     }
 `
 export const SUbcontainerDescript = styled.div`
@@ -104,5 +173,13 @@ export const SUbcontainerDescript = styled.div`
 
     @media (max-width: 430px) {
         margin-top: 3.3rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        margin-top: 3.3rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        margin-top: 2.7rem;
     }
 `

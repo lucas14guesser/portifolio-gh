@@ -1,4 +1,4 @@
-import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";import{L as M}from"./chunk-K6CSEXPM-BrXHkFkr.js";import{P as A,a as n,T as g}from"./GlobalStyles-_3-GMWsm.js";const F=o.div`
+import{d as o,a as E,j as a}from"./styled-components.browser.esm-BNWIvhS-.js";import{L as M}from"./chunk-K6CSEXPM-BrXHkFkr.js";import{P as h,a as d,T as A}from"./GlobalStyles-_3-GMWsm.js";const F=o.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,13 +9,31 @@ import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
         margin: 7rem 2rem;
         gap: 1rem;
     }
-`,N=o.h1`
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        margin: 7rem 4rem;
+        gap: 1rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        margin: 7rem 6rem;
+        gap: 1rem;
+    }
+`,w=o.h1`
     text-align: center;
 
     @media (max-width: 430px) {
         font-size: .7rem;
     }
-`,U=o.div`
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: 1.1rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: 1.5rem;
+    }
+`,N=o.div`
     display: flex;
     flex-direction: center;
     align-items: flex-start;
@@ -25,7 +43,15 @@ import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
     @media (max-width: 430px) {
         gap: 1rem;
     }
-`,s=o.p`
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        gap: 1rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        gap: 1rem;
+    }
+`,i=o.p`
     text-align: justify;
     font-size: 1rem;
     white-space: pre-line;
@@ -33,7 +59,15 @@ import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
     @media (max-width: 430px) {
         font-size: .5rem;
     }
-`,v=o.div`
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .7rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
+    }
+`,g=o.div`
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -42,13 +76,31 @@ import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
     @media (max-width: 430px) {
         flex-direction: column;
     }
-`,P=o.div`
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        flex-direction: column;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        flex-direction: column;
+    }
+`,v=o.div`
     display: flex;
     flex-direction: column;
     width: 60%;
     padding: 1rem;
 
     @media (max-width: 430px) {
+        width: 90%;
+        gap: .3rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        width: 90%;
+        gap: .3rem;
+    }
+    
+    @media (min-width: 601px) and (max-width: 800px) {
         width: 90%;
         gap: .3rem;
     }
@@ -60,16 +112,32 @@ import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
     @media (max-width: 430px) {
         width: 100%;
     }
-`,h=o.p`
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        width: 100%;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        width: 100%;
+    }
+`,P=o.p`
     font-size: 1.3rem;
 
     @media (max-width: 430px) {
         font-size: .7rem;
     }
-`,V=o.video`
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .8rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
+    }
+`,U=o.video`
     width: 100%;
     height: 100%;
-`,q=o(M)`
+`,V=o(M)`
     text-decoration: underline;
     color: #333333;
     font-size: 1rem;
@@ -82,12 +150,28 @@ import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
     @media (max-width: 430px) {
         font-size: .5rem;
     }
-`,k=o.img`
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        font-size: .7rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        font-size: .9rem;
+    }
+`,q=o.img`
     width: 100%;
     height: 30rem;
 
     @media (max-width: 430px) {
         height: 20rem;
+    }
+
+    @media (min-width: 431px) and (max-width: 600px) {
+        height: 20rem;
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {
+        height: 25rem;
     }
 `,z=o.div`
   display: flex;
@@ -97,8 +181,8 @@ import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
   width: 60%;
   gap: 5px;
   height: 35rem;
-`,l=o.img`
-  width: ${({imagesCount:d})=>d===1?"100%":d===2?"70%":"30%"}; 
+`,p=o.img`
+  width: ${({imagesCount:n})=>n===1?"100%":n===2?"70%":"30%"}; 
   height: 15rem;
   border: 1px solid #333;
   object-fit: cover;
@@ -108,7 +192,7 @@ import{d as o,a as E,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
   &:hover {
     transform: scale(1.7);
   }
-`;function L(){const d=[{title:"Casa do Terror",descript:["Casa do Terror retorna no domingo (10) a São José para uma tarde de sustos e diversão"],materia:["Evento promete experiências imersivas e muitas surpresas no Museu Gilberto Gerlach"],linkMateria:"https://saojose.sc.gov.br/casa-do-terror-retorna-neste-domingo-10-a-sao-jose-para-uma-tarde-de-sustos-e-diversao/70819/",image:"/assets/materias/casa-terror.png",altimage:"Museu histórico SJ"},{title:"Emissão de IPTU",descript:["Centro de Atendimento ao Cidadão recebe em média 150 pessoas por dia"],materia:["Serviço conta com 25 funcionários para atender demandas como emissão de IPTU, atendimento empresarial, ITBI e abertura de processos"],linkMateria:"https://saojose.sc.gov.br/centro-de-atendimento-ao-cidadao-recebe-em-media-150-pessoas-por-dia-2/33893/",image:"/assets/materias/cac.png",altimage:"Imagem do CAC"},{title:"Vôlei de Praia",descript:["Atleta de Vôlei de Praia de São José participa há 24 anos do JASC"],materia:["Ceará coleciona 14 medalhas de ouro e cinco de prata nos Jogos Abertos de Santa Catarina"],linkMateria:"https://saojose.sc.gov.br/atleta-de-volei-de-praia-de-sao-jose-participa-ha-24-anos-do-jasc/30316/",image:"/assets/materias/volei-praia.png",altimage:"Imagem vôlei de praia"},{title:"São José já sonha com as Olimpíadas",descript:["Atleta destaque de São José já sonha com Olimpíadas 2024"],materia:["Medalhista de ouro recordista no lançamento de disco Wellinton Fernandes, 24 anos, revela história de superação na luta em manter-se como atleta"],linkMateria:"https://saojose.sc.gov.br/atleta-destaque-de-sao-jose-ja-sonha-com-olimpiadas-2024/31611/",image:"/assets/materias/atletismo.png",altimage:"Imagem de Wellinton Fernandes"},{title:"Time de Handebol",descript:["Time de Handebol de São José entra em quadra com reforços em 2023"],materia:["Técnicos da modalidade trabalham rumo à Liga Nacional e Campeonato Brasileiro"],linkMateria:"https://saojose.sc.gov.br/time-de-handebol-de-sao-jose-entra-em-quadra-com-reforcos-em-2023/35390/",image:"/assets/materias/time-handebol.png",altimage:"Imagem do cenário do time de handebol"},{title:"Vôlei de mãe para filho",descript:["Quando o vôlei é de mãe para filho"],materia:["Conheça a história da professora e atleta que pretende manter os treinos durante a gestação"],linkMateria:"https://saojose.sc.gov.br/quando-o-volei-e-de-mae-para-filho/39179/",image:"/assets/materias/volei-mae-filho.png",altimage:"Imagem de um casal jogadores de vòlei esperando um filho"},{title:"São José e Atlético Catarinense",descript:["São José confirma parceria no projeto do Atlético Catarinense"],materia:["Em visita ao prefeito Orvino, Romário pede apoio logístico para treinamentos da equipe"],linkMateria:"https://saojose.sc.gov.br/sao-jose-confirma-parceria-no-projeto-do-atletico-catarinense/30393/",image:"/assets/materias/atletico-cat.png",altimage:"Imagem da reunião do prefeito Orvino com Romário"}],R=[{title:"Terrifier",descript:["Projeto Pessoal de Cosplay"],materia:[`terrifier day 🤡
+`;function L(){const n=[{title:"Casa do Terror",descript:["Casa do Terror retorna no domingo (10) a São José para uma tarde de sustos e diversão"],materia:["Evento promete experiências imersivas e muitas surpresas no Museu Gilberto Gerlach"],linkMateria:"https://saojose.sc.gov.br/casa-do-terror-retorna-neste-domingo-10-a-sao-jose-para-uma-tarde-de-sustos-e-diversao/70819/",image:"/assets/materias/casa-terror.png",altimage:"Museu histórico SJ"},{title:"Emissão de IPTU",descript:["Centro de Atendimento ao Cidadão recebe em média 150 pessoas por dia"],materia:["Serviço conta com 25 funcionários para atender demandas como emissão de IPTU, atendimento empresarial, ITBI e abertura de processos"],linkMateria:"https://saojose.sc.gov.br/centro-de-atendimento-ao-cidadao-recebe-em-media-150-pessoas-por-dia-2/33893/",image:"/assets/materias/cac.png",altimage:"Imagem do CAC"},{title:"Vôlei de Praia",descript:["Atleta de Vôlei de Praia de São José participa há 24 anos do JASC"],materia:["Ceará coleciona 14 medalhas de ouro e cinco de prata nos Jogos Abertos de Santa Catarina"],linkMateria:"https://saojose.sc.gov.br/atleta-de-volei-de-praia-de-sao-jose-participa-ha-24-anos-do-jasc/30316/",image:"/assets/materias/volei-praia.png",altimage:"Imagem vôlei de praia"},{title:"São José já sonha com as Olimpíadas",descript:["Atleta destaque de São José já sonha com Olimpíadas 2024"],materia:["Medalhista de ouro recordista no lançamento de disco Wellinton Fernandes, 24 anos, revela história de superação na luta em manter-se como atleta"],linkMateria:"https://saojose.sc.gov.br/atleta-destaque-de-sao-jose-ja-sonha-com-olimpiadas-2024/31611/",image:"/assets/materias/atletismo.png",altimage:"Imagem de Wellinton Fernandes"},{title:"Time de Handebol",descript:["Time de Handebol de São José entra em quadra com reforços em 2023"],materia:["Técnicos da modalidade trabalham rumo à Liga Nacional e Campeonato Brasileiro"],linkMateria:"https://saojose.sc.gov.br/time-de-handebol-de-sao-jose-entra-em-quadra-com-reforcos-em-2023/35390/",image:"/assets/materias/time-handebol.png",altimage:"Imagem do cenário do time de handebol"},{title:"Vôlei de mãe para filho",descript:["Quando o vôlei é de mãe para filho"],materia:["Conheça a história da professora e atleta que pretende manter os treinos durante a gestação"],linkMateria:"https://saojose.sc.gov.br/quando-o-volei-e-de-mae-para-filho/39179/",image:"/assets/materias/volei-mae-filho.png",altimage:"Imagem de um casal jogadores de vòlei esperando um filho"},{title:"São José e Atlético Catarinense",descript:["São José confirma parceria no projeto do Atlético Catarinense"],materia:["Em visita ao prefeito Orvino, Romário pede apoio logístico para treinamentos da equipe"],linkMateria:"https://saojose.sc.gov.br/sao-jose-confirma-parceria-no-projeto-do-atletico-catarinense/30393/",image:"/assets/materias/atletico-cat.png",altimage:"Imagem da reunião do prefeito Orvino com Romário"}],R=[{title:"Terrifier",descript:["Projeto Pessoal de Cosplay"],materia:[`terrifier day 🤡
 
 direção e edição: @floripafotografia.cs 🎬
 maquiagem: @beleza.mystika 🎨
@@ -266,8 +350,8 @@ Entenda no vídeo como funciona o projeto da Prefeitura, 🥦🥕🥬 que garant
 
 👉🏽 Confira no vídeo as melhores formas de encaminhar cada tipo de assunto!
 
-#CidadeDasOportunidades #SaoJose #PMSJ`],video:"/assets/videos/VÍDEO-30.mp4"}],S=[{title:"FOTOS TERRIFIER",descript:["E essa produção? @officialterrifier3 @terrifierbrazil"],materia:[`Maquiagem : @mystikaproducoes
+#CidadeDasOportunidades #SaoJose #PMSJ`],video:"/assets/videos/VÍDEO-30.mp4"}],x=[{title:"FOTOS TERRIFIER",descript:["E essa produção? @officialterrifier3 @terrifierbrazil"],materia:[`Maquiagem : @mystikaproducoes
 Ator : @guilhermehsou
 Audiovisual @floripafotografia.cs`],image:"/assets/fotos/foto-1.jpg",image2:"/assets/fotos/foto-2.jpg",image3:"/assets/fotos/foto-3.jpg",altimage:"Foto 1 Terrifier",altimage2:"Foto 2 Terrifier",altimage3:"Foto 3 Terrifier"},{title:"Oscar",descript:["🏆 E o Oscar vai para… São José! 🎬✨"],materia:["Na categoria Segurança Pública, o prêmio vai para o reforço nos efetivos, novos armamentos e viaturas. Em Mobilidade Urbana, a estatueta é nossa pelo avanço nas obras e melhorias no trânsito. E no papel de protagonista em Saúde, São José se destaca como referência no atendimento à mulher e à criança. Aqui, os investimentos são de verdade e os resultados são dignos de premiação! 🎥👏"],image:"/assets/fotos/foto-4.png",image2:"/assets/fotos/foto-5.png",image3:"/assets/fotos/foto-6.png",image4:"/assets/fotos/foto-7.png",altimage:"Foto Oscar",altimage2:"Foto Reforço no quadro de efetivos",altimage3:"Foto Mobilidade",altimage4:"Foto Referência no atendimento a mulher e a criança"},{title:"Neymar no Carnaval em SJ",descript:["Neymar Passa em São José para ver ensaio do Jardim das Palmeiras"],materia:[`Que tal fazer igual ao Neymar e ir curtir o ensaio da escola de samba Jardim das Palmeiras? 🥁 O próximo ensaio ao ar livre acontece nesta segunda (3), às 20h30, na praça Adriano de Farias, em Forquilhinhas. Vamos vibrar com a escola de samba que representa São José na passarela Nego Quiridu! 💚
 
-Acompanhe a agenda no @jardimdaspalmeirasoriginal! 😉`],image:"/assets/fotos/foto-8.png",altimage:"Foto Neymar no carnaval em SJ"}],[i,f]=E.useState(0),c=1,O=Math.ceil(d.length/c),D=d.slice(i*c,(i+1)*c),[r,T]=E.useState(0),p=1,j=Math.ceil(R.length/p),I=R.slice(r*p,(r+1)*p),[t,x]=E.useState(0),u=1,C=Math.ceil(S.length/u),b=S.slice(t*u,(t+1)*u);return e.jsxs(F,{children:[e.jsx(N,{children:"Projetos"}),e.jsx(U,{children:e.jsx(s,{children:"Boas-vindas à minha página de projetos! Aqui você pode ver todos os projetos dos quais participei, incluindo matérias que escrevi, entrevistas que realizei e vídeos nos quais atuei ou editei."})}),e.jsx(s,{style:{fontSize:"1.2rem"},children:"Matérias"}),D.map((a,m)=>e.jsxs(v,{children:[" ",e.jsxs(P,{children:[" ",e.jsx(h,{children:a.title}),e.jsx(s,{children:a.descript}),e.jsx(s,{children:a.materia}),e.jsx(q,{to:a.linkMateria,target:"_blank",children:"Link da matéria"})]}),e.jsxs(J,{children:[" ",e.jsx(k,{src:a.image,alt:a.altimage})]})]},m)),e.jsxs(A,{children:[e.jsx(n,{onClick:()=>f(i-1),disabled:i===0,children:"Anterior"}),e.jsxs(g,{children:["Matéria ",i+1," de ",O]}),e.jsx(n,{onClick:()=>f(i+1),disabled:i===O-1,children:"Próxima"})]}),e.jsx(s,{style:{fontSize:"1.2rem"},children:"Vídeos"}),I.map((a,m)=>e.jsxs(v,{children:[" ",e.jsxs(P,{children:[" ",e.jsx(h,{children:a.title}),e.jsx(s,{children:a.descript}),e.jsx(s,{children:a.materia})]}),e.jsxs(J,{children:[" ",e.jsx(V,{controls:!0,children:e.jsx("source",{src:a.video})},a.video)]})]},m)),e.jsxs(A,{children:[e.jsx(n,{onClick:()=>T(r-1),disabled:r===0,children:"Anterior"}),e.jsxs(g,{children:["Vídeo ",r+1," de ",j]}),e.jsx(n,{onClick:()=>T(r+1),disabled:r===j-1,children:"Próxima"})]}),e.jsx(s,{style:{fontSize:"1.2rem"},children:"Fotos"}),b.map((a,m)=>e.jsxs(v,{children:[" ",e.jsxs(P,{children:[" ",e.jsx(h,{children:a.title}),e.jsx(s,{children:a.descript}),e.jsx(s,{children:a.materia})]}),e.jsxs(z,{children:[a.image&&e.jsx(l,{src:a.image,alt:a.altimage}),a.image2&&e.jsx(l,{src:a.image2,alt:a.altimage2}),a.image3&&e.jsx(l,{src:a.image3,alt:a.altimage3}),a.image4&&e.jsx(l,{src:a.image4,alt:a.altimage4})]})]},m)),e.jsxs(A,{children:[e.jsx(n,{onClick:()=>x(t-1),disabled:t===0,children:"Anterior"}),e.jsxs(g,{children:["Foto ",t+1," de ",C]}),e.jsx(n,{onClick:()=>x(t+1),disabled:t===C-1,children:"Próxima"})]})]})}export{L as P};
+Acompanhe a agenda no @jardimdaspalmeirasoriginal! 😉`],image:"/assets/fotos/foto-8.png",altimage:"Foto Neymar no carnaval em SJ"}],[s,f]=E.useState(0),l=1,S=Math.ceil(n.length/l),D=n.slice(s*l,(s+1)*l),[t,O]=E.useState(0),c=1,T=Math.ceil(R.length/c),I=R.slice(t*c,(t+1)*c),[r,j]=E.useState(0),u=1,C=Math.ceil(x.length/u),b=x.slice(r*u,(r+1)*u);return a.jsxs(F,{children:[a.jsx(w,{children:"Projetos"}),a.jsx(N,{children:a.jsx(i,{children:"Boas-vindas à minha página de projetos! Aqui você pode ver todos os projetos dos quais participei, incluindo matérias que escrevi, entrevistas que realizei e vídeos nos quais atuei ou editei."})}),a.jsx(i,{style:{fontSize:"1.2rem"},children:"Matérias"}),D.map((e,m)=>a.jsxs(g,{children:[" ",a.jsxs(v,{children:[" ",a.jsx(P,{children:e.title}),a.jsx(i,{children:e.descript}),a.jsx(i,{children:e.materia}),a.jsx(V,{to:e.linkMateria,target:"_blank",children:"Link da matéria"})]}),a.jsxs(J,{children:[" ",a.jsx(q,{src:e.image,alt:e.altimage})]})]},m)),a.jsxs(h,{children:[a.jsx(d,{onClick:()=>f(s-1),disabled:s===0,children:"Anterior"}),a.jsxs(A,{children:["Matéria ",s+1," de ",S]}),a.jsx(d,{onClick:()=>f(s+1),disabled:s===S-1,children:"Próxima"})]}),a.jsx(i,{style:{fontSize:"1.2rem"},children:"Vídeos"}),I.map((e,m)=>a.jsxs(g,{children:[" ",a.jsxs(v,{children:[" ",a.jsx(P,{children:e.title}),a.jsx(i,{children:e.descript}),a.jsx(i,{children:e.materia})]}),a.jsxs(J,{children:[" ",a.jsx(U,{controls:!0,children:a.jsx("source",{src:e.video})},e.video)]})]},m)),a.jsxs(h,{children:[a.jsx(d,{onClick:()=>O(t-1),disabled:t===0,children:"Anterior"}),a.jsxs(A,{children:["Vídeo ",t+1," de ",T]}),a.jsx(d,{onClick:()=>O(t+1),disabled:t===T-1,children:"Próxima"})]}),a.jsx(i,{style:{fontSize:"1.2rem"},children:"Fotos"}),b.map((e,m)=>a.jsxs(g,{children:[" ",a.jsxs(v,{children:[" ",a.jsx(P,{children:e.title}),a.jsx(i,{children:e.descript}),a.jsx(i,{children:e.materia})]}),a.jsxs(z,{children:[e.image&&a.jsx(p,{src:e.image,alt:e.altimage}),e.image2&&a.jsx(p,{src:e.image2,alt:e.altimage2}),e.image3&&a.jsx(p,{src:e.image3,alt:e.altimage3}),e.image4&&a.jsx(p,{src:e.image4,alt:e.altimage4})]})]},m)),a.jsxs(h,{children:[a.jsx(d,{onClick:()=>j(r-1),disabled:r===0,children:"Anterior"}),a.jsxs(A,{children:["Foto ",r+1," de ",C]}),a.jsx(d,{onClick:()=>j(r+1),disabled:r===C-1,children:"Próxima"})]})]})}export{L as P};

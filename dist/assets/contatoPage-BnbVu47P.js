@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-export const ContainerContatoPage = styled.div`
+import{d as i,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";const d=i.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,8 +19,7 @@ export const ContainerContatoPage = styled.div`
         margin: 7rem 3rem 7rem 1rem;
         gap: 1rem;
     }
-`
-export const TitlePageContato = styled.h1`
+`,r=i.h1`
     text-align: center;
 
     @media (max-width: 430px) {
@@ -36,8 +33,7 @@ export const TitlePageContato = styled.h1`
     @media (min-width: 601px) and (max-width: 800px) {
         font-size: 1.5rem;
     }
-`
-export const FormContact = styled.form`
+`,n=i.form`
     display: flex;
     flex-direction: column;
     background: #EAEAEA;
@@ -60,15 +56,13 @@ export const FormContact = styled.form`
         width: 100%;
         padding: 1rem;
     }
-`
-export const SubcontainerNameSbr = styled.div`
+`,m=i.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     width: 100%;
-`
-export const InptContact = styled.input`
+`,t=i.input`
     width: 10rem;
     border-top: none;
     border-right: none;
@@ -100,8 +94,7 @@ export const InptContact = styled.input`
             font-size: 1rem;
         }
     }
-`
-export const AreaMsg = styled.textarea`
+`,a=i.textarea`
     width: 10rem;
     border-top: none;
     border-right: none;
@@ -132,8 +125,7 @@ export const AreaMsg = styled.textarea`
             font-size: 1rem;
         }
     }
-`
-export const BtnContact = styled.button`
+`,o=i.button`
     width: 7rem;
     text-transform: uppercase;
     border: 1px solid #333333;
@@ -159,4 +151,4 @@ export const BtnContact = styled.button`
         width: 7rem;
         padding: .5rem;
     }
-`
+`;function x(){return e.jsxs(d,{children:[e.jsx(r,{children:"Contato"}),e.jsxs(n,{action:"mailto:guilherme7hs@gmail.com",method:"post",enctype:"text/plain",children:[e.jsxs(m,{children:[e.jsx(t,{type:"text",placeholder:"NOME",required:!0,style:{width:"50%"}}),e.jsx(t,{type:"text",placeholder:"SOBRENOME",style:{width:"50%"}})]}),e.jsx(t,{type:"email",placeholder:"E-MAIL",required:!0,style:{width:"100%"}}),e.jsx(t,{type:"text",placeholder:"ASSUNTO",style:{width:"100%"}}),e.jsx(a,{name:"Mensagem",id:"msg",placeholder:"MENSAGEM",rows:"10",cols:"50",required:!0,style:{width:"100%"}}),e.jsx(o,{type:"submit",children:"Enviar"})]})]})}export{x as C};
