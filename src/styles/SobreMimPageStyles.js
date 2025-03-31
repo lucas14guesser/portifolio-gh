@@ -20,6 +20,10 @@ export const ContainerSobreMimPage = styled.div`
     @media (min-width: 601px) and (max-width: 800px) {
         margin: 7rem 6rem;
     }
+
+    @media (min-width: 801px) and (max-width: 1250px) {
+        margin: 7rem 3rem;
+    }
 `
 export const TitlePageSobreMim = styled.h1`
     text-align: center;

@@ -19,6 +19,10 @@ import{d as i,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";const d=i
         margin: 7rem 3rem 7rem 1rem;
         gap: 1rem;
     }
+
+    @media (min-width: 801px) and (max-width: 1250px) {
+        margin: 7rem 3rem 7rem 0;
+    }
 `,r=i.h1`
     text-align: center;
 
@@ -33,7 +37,7 @@ import{d as i,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";const d=i
     @media (min-width: 601px) and (max-width: 800px) {
         font-size: 1.5rem;
     }
-`,n=i.form`
+`,m=i.form`
     display: flex;
     flex-direction: column;
     background: #EAEAEA;
@@ -56,7 +60,7 @@ import{d as i,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";const d=i
         width: 100%;
         padding: 1rem;
     }
-`,m=i.div`
+`,n=i.div`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -151,4 +155,4 @@ import{d as i,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";const d=i
         width: 7rem;
         padding: .5rem;
     }
-`;function x(){return e.jsxs(d,{children:[e.jsx(r,{children:"Contato"}),e.jsxs(n,{action:"mailto:guilherme7hs@gmail.com",method:"post",enctype:"text/plain",children:[e.jsxs(m,{children:[e.jsx(t,{type:"text",placeholder:"NOME",required:!0,style:{width:"50%"}}),e.jsx(t,{type:"text",placeholder:"SOBRENOME",style:{width:"50%"}})]}),e.jsx(t,{type:"email",placeholder:"E-MAIL",required:!0,style:{width:"100%"}}),e.jsx(t,{type:"text",placeholder:"ASSUNTO",style:{width:"100%"}}),e.jsx(a,{name:"Mensagem",id:"msg",placeholder:"MENSAGEM",rows:"10",cols:"50",required:!0,style:{width:"100%"}}),e.jsx(o,{type:"submit",children:"Enviar"})]})]})}export{x as C};
+`;function x(){return e.jsxs(d,{children:[e.jsx(r,{children:"Contato"}),e.jsxs(m,{action:"mailto:guilherme7hs@gmail.com",method:"post",enctype:"text/plain",children:[e.jsxs(n,{children:[e.jsx(t,{type:"text",placeholder:"NOME",required:!0,style:{width:"50%"}}),e.jsx(t,{type:"text",placeholder:"SOBRENOME",style:{width:"50%"}})]}),e.jsx(t,{type:"email",placeholder:"E-MAIL",required:!0,style:{width:"100%"}}),e.jsx(t,{type:"text",placeholder:"ASSUNTO",style:{width:"100%"}}),e.jsx(a,{name:"Mensagem",id:"msg",placeholder:"MENSAGEM",rows:"10",cols:"50",required:!0,style:{width:"100%"}}),e.jsx(o,{type:"submit",children:"Enviar"})]})]})}export{x as C};

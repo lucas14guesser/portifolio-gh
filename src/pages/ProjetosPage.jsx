@@ -94,7 +94,7 @@ function ProjetosPage() {
     {
       title: "Terrifier",
       descript: [
-        "Projeto Pessoal de Cosplay"
+        "PROJETO PESSOAL DE COSPLAY"
       ],
       materia: [
         "terrifier day 🤡\n\n" +
@@ -107,7 +107,7 @@ function ProjetosPage() {
     {
       title: "Terrifier",
       descript: [
-        "Projeto Pessoal de Cosplay"
+        "PROJETO PESSOAL DE COSPLAY"
       ],
       materia: [
         "terrifier day 🤡\n\n" +
@@ -560,7 +560,7 @@ function ProjetosPage() {
 
       <SubcontainerTextsProjetos>
         <TextDefaultProjetos>
-          Boas-vindas à minha página de projetos! Aqui você pode ver todos os projetos dos quais participei, incluindo matérias que escrevi, entrevistas que realizei e vídeos nos quais atuei ou editei.
+          Bem-vindo à minha página de projetos! Aqui você encontra uma seleção dos trabalhos que já realizei, desde matérias que escrevi e roteiros que desenvolvi até vídeos nos quais atuei ou editei.
         </TextDefaultProjetos>
       </SubcontainerTextsProjetos>
 

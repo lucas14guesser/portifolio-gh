@@ -22,6 +22,10 @@ export const ContainerProjetosPage = styled.div`
         margin: 7rem 6rem;
         gap: 1rem;
     }
+
+    @media (min-width: 801px) and (max-width: 1250px) {
+        margin: 7rem 3rem;
+    }
 `
 export const TitlePageProjetos = styled.h1`
     text-align: center;

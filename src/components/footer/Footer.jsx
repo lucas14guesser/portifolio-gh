@@ -13,12 +13,12 @@ function Footer() {
             <SubcontainerDadosFooter>
                 <SectionDados>
                     <TextSectionDados>Telefone</TextSectionDados>
-                    <LinkSocialMedia href="https://api.whatsapp.com/send/?phone=5548988473121&text&type=phone_number&app_absent=0" target='_blank'><TextSec>(48)9 8847-3121</TextSec></LinkSocialMedia>
+                    <LinkSocialMedia to="https://api.whatsapp.com/send/?phone=5548988473121&text&type=phone_number&app_absent=0" target='_blank'><TextSec>(48)9 8847-3121</TextSec></LinkSocialMedia>
                 </SectionDados>
 
                 <SectionDados>
                     <TextSectionDados>E-mail</TextSectionDados>
-                    <LinkSocialMedia href="mailto:guilherme7hs@gmail.com"><TextSec>guilherme7hs@gmail.com</TextSec></LinkSocialMedia>
+                    <LinkSocialMedia to="mailto:guilherme7hs@gmail.com"><TextSec>guilherme7hs@gmail.com</TextSec></LinkSocialMedia>
                 </SectionDados>
 
                 <SectionDados>

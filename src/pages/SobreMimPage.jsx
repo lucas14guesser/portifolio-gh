@@ -23,7 +23,7 @@ function SobreMimPage() {
     {
       title: "Um ajudante",
       descript: [
-        "Sempre ajudei amigos a conseguir emprego, desenvolvendo habilidades de comunicação e persuasão, antes mesmo de atuar com jornalismo na Prefeitura. Meu maior case sucesso? Indicar o videomaker que trabalhou na campanha do vice-prefeito de São José e segue atuando com ele, sou um grande empresário nas horas vagas."
+        "Sempre ajudei amigos a conseguir emprego, desenvolvendo habilidades de comunicação e persuasão, antes mesmo de atuar com jornalismo na Prefeitura. Meu maior case sucesso? Indicar o videomaker que trabalhou na campanha do vice-prefeito de São José e segue atuando com ele, sou um grande empresário nas horas vagas kkkkkk (ironia)."
       ],
       image: "/assets/pagina-3.jpg",
       altImage: 'Foto com meu amigo videomaker'
@@ -55,7 +55,7 @@ function SobreMimPage() {
     {
       title: "Inspiração",
       descript: [
-        "Como diria o Luffy, ‘’Enquanto eu estiver vivo, as possibilidades são infinitas.’’ Eu sempre fui o tipo de cara que tinha medo de conquistar. Esperava que as coisas caíssem no meu colo, até que entrei no mercado de trabalho e, como diria o meu amigo Seu Gilberto, me tornei outra pessoa. Independente de onde você esteja, nunca duvide da sua capacidade. Tente, mesmo com medo. O friozinho na barriga é bom para dar coragem. Você vai estar perdendo muitas oportunidades se não ao menos tentar, o não você já tem. Eu sei que o prefeito vir no meu aniversário pode não parecer grande coisa, mas que influência política eu tenho? Nenhuma. Ninguém de São José estaria no meu aniversário, era ano de votação, e eu já iria votar nele mesmo se ele não viesse. Eu era jornalista antes de saber que era, sempre fui persistente, determinado, e acreditando que as possibilidades, como disse o Luffy, são infinitas."
+        "Como diria o Luffy, ‘’Enquanto eu estiver vivo, as possibilidades são infinitas.’’ Eu sempre fui o tipo de cara que tinha medo de conquistar. Esperava que as coisas caíssem no meu colo, até que entrei no mercado de trabalho e, como diria o meu amigo, Seu Gilberto, me tornei outra pessoa. Independente de onde você esteja, nunca duvide da sua capacidade. Tente, mesmo com medo. O friozinho na barriga é bom para dar coragem. Você vai estar perdendo muitas oportunidades se não ao menos tentar, o não você já tem. Eu sei que o prefeito vir no meu aniversário pode não parecer grande coisa, mas que influência política eu tenho? Nenhuma. Ninguém de São José estaria no meu aniversário, era ano de votação, e eu já iria votar nele mesmo se ele não viesse. Eu era jornalista antes de saber que era, sempre fui persistente, determinado, e acreditando que as possibilidades, como disse o Luffy, são infinitas."
       ],
       image: "/assets/pagina-7.jfif",
       altImage: 'Imagem que descreve o que o Luffy retrata na frase'
@@ -76,7 +76,7 @@ function SobreMimPage() {
 
       <SubcontainerTexts>
         <TextDefaultSobreMim>
-          Me chamo Guilherme Henrique Souza, tenho 22 anos, sou formado em jornalismo pela Unisul e sou assessor de comunicação. No dia a dia, escrevo matérias, roteiros e gravo vídeos. Fora do trabalho, sou um padrinho babão, gremista fanático, viciado em obras de terror, chop de vinho e acompanho One Piece como um verdadeiro "Chapéu de Palha".
+          Me chamo Guilherme Henrique Souza, tenho 22 anos, sou formado em jornalismo pela Unisul e sou assessor de comunicação. No dia a dia, escrevo matérias, roteiros e gravo vídeos. Fora do trabalho, sou um padrinho babão, gremista fanático, viciado em obras de terror, chopp de vinho e acompanho One Piece como um verdadeiro "Chapéu de Palha".
         </TextDefaultSobreMim>
       </SubcontainerTexts>
 

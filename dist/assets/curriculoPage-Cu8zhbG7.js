@@ -18,6 +18,10 @@ import{d as a,a as A,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
     @media (min-width: 601px) and (max-width: 800px) {
         margin: 7rem 6rem;
     }
+
+    @media (min-width: 801px) and (max-width: 1250px) {
+        margin: 7rem 3rem;
+    }
 `,E=a.div`
     display: flex;
     flex-direction: row;

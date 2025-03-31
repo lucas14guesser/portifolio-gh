@@ -22,6 +22,10 @@ export const ContainerHomePage = styled.div`
     @media (min-width: 601px) and (max-width: 800px) {
         gap: 1rem;
     }
+
+    @media (min-width: 801px) and (max-width: 1250px) {
+        gap: 2rem;
+    }
 `
 export const SubcontainerProfile = styled.div`
     display: flex;
@@ -45,6 +49,11 @@ export const SubcontainerProfile = styled.div`
     @media (min-width: 601px) and (max-width: 800px) {
         margin-left: 7rem;
         width: 15rem;
+    }
+
+    @media (min-width: 801px) and (max-width: 1250px) {
+        margin-left: 7rem;
+        width: 17rem;
     }
 `
 export const SubcontainerData = styled.div`
@@ -195,5 +204,10 @@ export const TextHomeDescript = styled.p`
     @media (min-width: 601px) and (max-width: 800px) {
         width: 20rem;
         font-size: .9rem;
+    }
+
+    @media (min-width: 801px) and (max-width: 1250px) {
+        width: 24rem;
+        font-size: 1rem;
     }
 `

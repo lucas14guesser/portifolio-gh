@@ -21,6 +21,10 @@ export const ContainerContatoPage = styled.div`
         margin: 7rem 3rem 7rem 1rem;
         gap: 1rem;
     }
+
+    @media (min-width: 801px) and (max-width: 1250px) {
+        margin: 7rem 3rem 7rem 0;
+    }
 `
 export const TitlePageContato = styled.h1`
     text-align: center;
