@@ -24,6 +24,7 @@ import{f as a,d as o}from"./styled-components.browser.esm-BNWIvhS-.js";const r=a
     align-items: center;
     justify-content: center;
     gap: .3rem;
+    margin-top: 1rem;
 `,n=o.span`
     font-size: 1rem;
     font-family: "Poppins", sans-serif;

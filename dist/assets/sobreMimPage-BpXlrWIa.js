@@ -1,4 +1,4 @@
-import{d as a,a as u,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";import{P as h,a as r,T as x}from"./GlobalStyles-_3-GMWsm.js";const l=a.div`
+import{d as a,a as u,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";import{P as h,a as r,T as x}from"./GlobalStyles-BhsjClub.js";const l=a.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
