@@ -6,71 +6,46 @@ function CurriculoPage() {
   const experiencias = [
     {
       data: "MARÇO DE 2025 - ATUAL",
-      cargo: "Assessoria de imprensa",
+      cargo: "Assessor de Imprensa (Pessoa Jurídica)",
       empresa: "Koi Comunicação",
-      endereco: "R. Nirberto Haase, 100 - Sala 301 - Santa Mônica, Florianópolis - SC, 88035-215",
       descricao: [
-        "Produção de releases, acompanhamento de imprensa e monitoramento de mídia.",
-        "Divulgação e clipagem para empresas como Juistreet, ZAH e Natura.",
-        "Planejamento estratégico e produção de conteúdo para redes sociais."
+        "– Produção de releases e acompanhamento de imprensa;",
+        "– Divulgação e clipagem para empresas como Juistreet e Greenvalley;",
+        "– Assistência no planejamento estratégico e produção de conteúdo. "
       ]
     },
     {
-      data: "JANEIRO DE 2025 - MARÇO DE 2025",
-      cargo: "Assessoria de imprensa",
-      empresa: "Secretaria Integrada de Comunicação Social - Prefeitura Municipal de São José",
-      endereco: "363, Av. Acioni Souza Filho, 403 - Centro, São José - SC, 88103-790",
+      data: "MARÇO DE 2021 - MARÇO DE 2025 ",
+      cargo: "Estagiário e Repórter ",
+      empresa: "Prefeitura Municipal de São José",
       descricao: [
-        "Comunicação institucional.",
-        "Assessoria de imprensa.",
-        "Captação de vídeos."
+        "SECRETARIA INTEGRADA DE COMUNICAÇÃO - REPÓRTER",
+        "– Atuação especialmente nas Secretarias de Esportes e Cultura; ",
+        "– Criação de conteúdo para redes sociais; ",
+        "– Produção de matérias, vídeos e cobertura fotográfica de eventos; Comunicação institucional;",
+        "– Atualização de portais públicos e realização de pesquisas históricas;",
+        "– Apoio a professores e atletas em ações esportivas.",
+        "CENTRO DE ATENDIMENTO AO CIDADÃO – ESTAGIÁRIO",
+        "– Abertura e consulta de processos gerais e empresariais;",
+        "– Tramitação de processos entre setores e geração de boletos;",
+        "– Atendimento interno entre os funcionários;",
+        "– Utilização dos sistemas Betha Sistemas, Betha Tributário, Fly Protocolo, Gov TP, Jr Atend e IPM."
       ]
     },
-    {
-      data: "JULHO DE 2024 - JANEIRO DE 2025",
-      cargo: "Assessoria de imprensa",
-      empresa: "Secretaria de Cultura e Turismo - Prefeitura Municipal de São José",
-      endereco: "363, Av. Acioni Souza Filho, 403 - Centro, São José - SC, 88103-790",
-      descricao: [
-        "Atualizações de site institucional do município.",
-        "Pesquisas históricas.",
-        "Fotografia de eventos."
-      ]
-    },
-    {
-      data: "MARÇO DE 2024 - JULHO DE 2024",
-      cargo: "Assessoria de imprensa",
-      empresa: "Secretaria de Esportes e Lazer - Prefeitura Municipal de São José",
-      endereco: "363, Av. Acioni Souza Filho, 403 - Centro, São José - SC, 88103-790",
-      descricao: [
-        "Criação de conteúdo para redes sociais.",
-        "Produção de matérias para site institucional.",
-        "Direcionamento de professores e atletas."
-      ]
-    },
-    {
-      data: "OUTUBRO DE 2022 - MARÇO DE 2024",
-      cargo: "Assessoria de imprensa",
-      empresa: "Secretaria Integrada de Comunicação Social - Prefeitura Municipal de São José",
-      endereco: "363, Av. Acioni Souza Filho, 403 - Centro, São José - SC, 88103-790",
-      descricao: [
-        "Criação de conteúdo para redes sociais.",
-        "Produção de matérias para site institucional.",
-        "Captação de imagens e vídeos."
-      ]
-    },
-    {
-      data: "MARÇO DE 2021 - OUTUBRO DE 2022",
-      cargo: "Estagiário",
-      empresa: "Centro de Atendimento ao Cidadão - Prefeitura Municipal de São José",
-      endereco: "363, Av. Acioni Souza Filho, 403 - Centro, São José - SC, 88103-790",
-      descricao: [
-        "Atendimento ao público.",
-        "Gestão de processos.",
-        "Sistemas administrativos."
-      ]
-    }
   ];
+
+  const formacoes = [
+    {
+      data: "MARÇO DE 2021 - DEZEMBRO DE 2024",
+      empresa: "UNIVERSIDADE DO SUL DE SANTA CATARINA - UNISUL",
+      descricao: "Bacharelado em Jornalismo - Completo"
+    },
+    {
+      data: "ABRIL DE 2025 - ABRIL DE 2026",
+      empresa: "UNIVERSIDADE DO SUL DE SANTA CATARINA - UNISUL",
+      descricao: "Pós-Graduação em Jornalismo Esportivo e Multimídias - Andamento"
+    },
+  ]
 
   const [paginaAtual, setPaginaAtual] = useState(0);
   const itensPorPagina = 1;
@@ -80,6 +55,16 @@ function CurriculoPage() {
     paginaAtual * itensPorPagina,
     (paginaAtual + 1) * itensPorPagina
   );
+
+  const [paginaAtualF, setPaginaAtualF] = useState(0);
+  const itensPorPaginaF = 1;
+  const totalPaginasF = Math.ceil(formacoes.length / itensPorPaginaF);
+
+  const formacoesPaginadas = formacoes.slice(
+    paginaAtualF * itensPorPaginaF,
+    (paginaAtualF + 1) * itensPorPaginaF
+  );
+
   return (
     <ContainerCurriculoPage> {/* div column */}
       <TitlePageCurriculo>Currículo</TitlePageCurriculo>
@@ -94,7 +79,6 @@ function CurriculoPage() {
             <TextTitleDate>{exp.data}</TextTitleDate>
             <TextDefaultCurriculo>{exp.cargo}</TextDefaultCurriculo>
             <TextDefaultCurriculo>{exp.empresa}</TextDefaultCurriculo>
-            <TextDefaultCurriculo>{exp.endereco}</TextDefaultCurriculo>
           </SubcontainerDataText>
           <SUbcontainerDescript>
             {exp.descricao.map((desc, i) => (
@@ -121,33 +105,30 @@ function CurriculoPage() {
         <TitleCurriculo>Formação</TitleCurriculo> {/* title */}
       </div>
 
-      <SubcontainerDataCurriculo> {/* div row */}
-        <SubcontainerDataText> {/* div column */}
-          <TextTitleDate>MARÇO DE 2021 - DEZEMBRO DE 2024</TextTitleDate>{/* title */}
-          <TextDefaultCurriculo>UNIVERSIDADE DO SUL DE SANTA CATARINA - UNISUL</TextDefaultCurriculo>
-          <TextDefaultCurriculo>Av. Pedra Branca, 25 - Cidade Universitária, Palhoça - SC, 88137-270</TextDefaultCurriculo>
-        </SubcontainerDataText>
+      {formacoesPaginadas.map((formacao, index) => (
+        <SubcontainerDataCurriculo key={index}> {/* div row */}
+          <SubcontainerDataText> {/* div column */}
+            <TextTitleDate>{formacao.data}</TextTitleDate>{/* title */}
+            <TextDefaultCurriculo>{formacao.empresa}</TextDefaultCurriculo>
+          </SubcontainerDataText>
 
-        <SUbcontainerDescript> {/* div column */}
-          <TextDefaultCurriculo>Bacharelado em Jornalismo</TextDefaultCurriculo> {/* descript */}
-        </SUbcontainerDescript>
+          <SUbcontainerDescript> {/* div column */}
+            <TextDefaultCurriculo>{formacao.descricao}</TextDefaultCurriculo> {/* descript */}
+          </SUbcontainerDescript>
+        </SubcontainerDataCurriculo>
+      ))}
 
-      </SubcontainerDataCurriculo>
-
-      <SubcontainerDataCurriculo> {/* div row */}
-        <SubcontainerDataText style={{width: '100%'}}> {/* div column */}
-          <TextTitleDate>COMPETÊNCIAS</TextTitleDate>{/* title */}
-          <TextDefaultCurriculo>
-            Profissional proativo e versátil, com experiência em comunicação, jornalismo e mídias sociais. Habilidades em escrita, edição de foto e vídeo, atendimento ao cliente e pesquisa de tendências. Busco oportunidades em ambientes colaborativos para contribuir com criatividade e eficiência.
-          </TextDefaultCurriculo>
-
-          <TextTitleDate style={{marginTop:'2rem'}}>INFORMAÇÕES COMPLEMENTARES</TextTitleDate>
-          <TextDefaultCurriculo>Carteira B</TextDefaultCurriculo>
-          <TextDefaultCurriculo>Inglês Intermediário</TextDefaultCurriculo>
-        </SubcontainerDataText>
-
-      </SubcontainerDataCurriculo>
-
+      <Paginacao>
+        <PagBtn onClick={() => setPaginaAtualF(paginaAtualF - 1)} disabled={paginaAtualF === 0}>
+          Anterior
+        </PagBtn>
+        <TxtPaginacao>
+          Formação {paginaAtualF + 1} de {totalPaginasF}
+        </TxtPaginacao>
+        <PagBtn onClick={() => setPaginaAtualF(paginaAtualF + 1)} disabled={paginaAtualF === totalPaginasF - 1}>
+          Próxima
+        </PagBtn>
+      </Paginacao>
 
     </ContainerCurriculoPage>
   )

@@ -9,9 +9,8 @@ function HomePage() {
                 <SubcontainerData> {/* container column img name border-bottom role*/}
                     <ImgProfile src="/assets/profileimg.jpg" alt="Foto de perfil" />
 
-                    <TituloProfile style={{ borderBottom: '1px solid #333333', paddingBottom: '1rem' }}>Guilherme H. <br />Souza</TituloProfile> {/* border-bottom padding+*/}
+                    <TituloProfile>Guilherme H. <br />Souza</TituloProfile> {/* border-bottom padding+*/}
 
-                    <TituloProfile style={{ marginBlockStart: '0' }}>Jornalista</TituloProfile>
                 </SubcontainerData>
 
                 <SubcontainerSocialMedia> {/* container row social media*/}
@@ -36,7 +35,7 @@ function HomePage() {
                 </SubcontainerBtn>
 
                 <TextHomeDescript>
-                    Me chamo Guilherme Henrique Souza, tenho 22 anos, sou formado em jornalismo pela Unisul e sou assessor de comunicação. No dia a dia, escrevo matérias, roteiros e gravo vídeos. Fora do trabalho, sou um padrinho babão, gremista fanático, viciado em obras de terror, chopp de vinho e acompanho One Piece como um verdadeiro "Chapéu de Palha".
+                    Olá, me chamo Guilherme Henrique Souza, mas pode me chamar de Gui. Tenho 22 anos, sou bacharel em Jornalismo pela Unisul e atualmente curso pós-graduação em Jornalismo Esportivo e Multimídias pela mesma universidade. Atuei por dois anos em comunicação institucional e, atualmente, trabalho em uma agência de assessoria de imprensa. Tenho experiência na produção de releases, atendimento à imprensa, cobertura de eventos, além da criação de roteiros e conteúdos audiovisuais para redes sociais.
                 </TextHomeDescript>
             </SubcontainerDescript>
         </ContainerHomePage>

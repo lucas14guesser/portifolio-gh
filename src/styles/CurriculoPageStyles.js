@@ -99,16 +99,16 @@ export const SubcontainerDataCurriculo = styled.div`
     gap: 3rem;
     border: 1px solid #333333;
     width: 100%;
-    height: 20rem;
+    height: 31rem;
 
     @media (max-width: 430px) {
         width: 92%;
-        height: 15rem;
+        height: 20rem;
     }
 
     @media (min-width: 431px) and (max-width: 600px) {
         width: 92%;
-        height: 15rem;
+        height: 20rem;
     }
 
     @media (min-width: 601px) and (max-width: 800px) {
@@ -171,8 +171,7 @@ export const TextDefaultCurriculo = styled.p`
 export const SUbcontainerDescript = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 2.7rem;
-    gap: 1rem;
+    gap: .5rem;
     width: 50%;
 
     @media (max-width: 430px) {

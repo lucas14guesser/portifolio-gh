@@ -27,6 +27,7 @@ export const Paginacao = styled.div`
     align-items: center;
     justify-content: center;
     gap: .3rem;
+    margin-top: 1rem;
 `
 export const TxtPaginacao = styled.span`
     font-size: 1rem;

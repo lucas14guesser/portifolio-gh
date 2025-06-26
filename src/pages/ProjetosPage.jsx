@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { ContainerProjetosPage, ImgMini, ImgsProjetos, LinkMaterias, SubcontainerImgs, SubcontainerImgsProjetos, SubcontainerTextsDescriptProjetos, SubcontainerTextsImgProjetos, SubcontainerTextsProjetos, TextDefaultProjetos, TitlePageProjetos, TituloTextDescriptProjetos, VideoProjetos } from '../styles/ProjetosPage'
+import { ContainerProjetosPage, ImgMini, ImgsProjetos, LinkDownloadPdf, LinkMaterias, SubcontainerImgs, SubcontainerImgsProjetos, SubcontainerTextsDescriptProjetos, SubcontainerTextsImgProjetos, SubcontainerTextsProjetos, TextDefaultProjetos, TitlePageProjetos, TituloTextDescriptProjetos, VideoProjetos } from '../styles/ProjetosPage'
 import { PagBtn, Paginacao, TxtPaginacao } from '../styles/GlobalStyles';
+import { IoIosArrowRoundForward, IoIosArrowRoundDown } from "react-icons/io";
+import { TxtDefault } from '../styles/HomePageStyles';
 
 function ProjetosPage() {
   const materias = [
@@ -91,31 +93,6 @@ function ProjetosPage() {
   ];
 
   const videos = [
-    {
-      title: "Terrifier",
-      descript: [
-        "PROJETO PESSOAL DE COSPLAY"
-      ],
-      materia: [
-        "terrifier day 🤡\n\n" +
-        "direção e edição: @floripafotografia.cs 🎬\n" +
-        "maquiagem: @beleza.mystika 🎨\n" +
-        "figurino: @disfarcefantasias 🤵🏻‍♂️\n"
-      ],
-      video: "/assets/videos/VÍDEO-1.mp4"
-    },
-    {
-      title: "Terrifier",
-      descript: [
-        "PROJETO PESSOAL DE COSPLAY"
-      ],
-      materia: [
-        "terrifier day 🤡\n\n" +
-        "Vocês gostam de making off né? Então tá ai um pouquinho 🤣🔥👌🏻\n\n" +
-        "#floripa #fotografo #videomaker #terrifier3"
-      ],
-      video: "/assets/videos/VÍDEO-2.mp4"
-    },
     {
       title: "CAC/RECEITA",
       descript: [
@@ -480,23 +457,6 @@ function ProjetosPage() {
 
   const fotos = [
     {
-      title: "FOTOS TERRIFIER",
-      descript: [
-        "E essa produção? @officialterrifier3 @terrifierbrazil"
-      ],
-      materia: [
-        "Maquiagem : @mystikaproducoes\n" +
-        "Ator : @guilhermehsou\n" +
-        "Audiovisual @floripafotografia.cs"
-      ],
-      image: "/assets/fotos/foto-1.jpg",
-      image2: "/assets/fotos/foto-2.jpg",
-      image3: "/assets/fotos/foto-3.jpg",
-      altimage: 'Foto 1 Terrifier',
-      altimage2: 'Foto 2 Terrifier',
-      altimage3: 'Foto 3 Terrifier',
-    },
-    {
       title: "Oscar",
       descript: [
         "🏆 E o Oscar vai para… São José! 🎬✨"
@@ -527,6 +487,139 @@ function ProjetosPage() {
     },
   ];
 
+  const koi = [
+    {
+      cliente: "Zah Empreendimentos",
+      nome: "Zah Amazônia",
+      pdf: "/assets/pdfs/zah-amazonia.pdf",
+    },
+    {
+      cliente: "Zah Empreendimentos",
+      nome: "Zah Amazônia Pós Evento",
+      pdf: "/assets/pdfs/zah-amazonia-pos.pdf",
+    },
+    {
+      cliente: "Greenvalley",
+      nome: "Winter Music 25",
+      pdf: "/assets/pdfs/winter-music-25.pdf",
+    },
+    {
+      cliente: "Greenvalley",
+      nome: "Road to Tomorrowland",
+      pdf: "/assets/pdfs/road-tomorrowland.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Nota Fictícia de Inauguração em Outros Países",
+      pdf: "/assets/pdfs/nota-ficticia-inauguracao-outros-paises.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Modelo de Cartinha de Press Kit",
+      pdf: "/assets/pdfs/modelo-cartinha-press-kit.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Convite Fictício Inauguração Juistreet São José",
+      pdf: "/assets/pdfs/convite-ficticio-modelo-inauguração-juistreet-sao-jose.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Relatório de Treinamento KoIA para Ju",
+      pdf: "/assets/pdfs/relatorio-treinamento-koia-ju.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Release de Lançamento Hots Smoothies",
+      pdf: "/assets/pdfs/release-lancamento-hots-smoothies.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Mini Bio Renato Muniz",
+      pdf: "/assets/pdfs/mini-bio-renato-muniz.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Esqueleto do Release de Inauguração em Mogi, Bauru e Arujá + Reforço Vila Mariana (SP)",
+      pdf: "/assets/pdfs/esqueleto-release-inauguração-mogi-bauru-aruja-reforco-vila-mariana-sp.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Release Inauguração Porto Alegre",
+      pdf: "/assets/pdfs/release-inauguracao-porto-alegre.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Release Inauguração Vila Mariana",
+      pdf: "/assets/pdfs/release-inauguracao-vila-mariana.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Release Abertura Caxias do Sul",
+      pdf: "/assets/pdfs/release-abertura-caxias-sul.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Release Institucional Juistreet",
+      pdf: "/assets/pdfs/release-institucional-juistreet.pdf",
+    },
+    {
+      cliente: "Juistreet",
+      nome: "Boilerplate Juistreet",
+      pdf: "/assets/pdfs/boilerplate-juistreet.pdf",
+    },
+
+
+  ]
+
+  const videosPessoais = [
+    {
+      title: "Terrifier",
+      descript: [
+        "PROJETO PESSOAL DE COSPLAY"
+      ],
+      materia: [
+        "terrifier day 🤡\n\n" +
+        "direção e edição: @floripafotografia.cs 🎬\n" +
+        "maquiagem: @beleza.mystika 🎨\n" +
+        "figurino: @disfarcefantasias 🤵🏻‍♂️\n"
+      ],
+      video: "/assets/videos/VÍDEO-1.mp4"
+    },
+    {
+      title: "Terrifier",
+      descript: [
+        "PROJETO PESSOAL DE COSPLAY"
+      ],
+      materia: [
+        "terrifier day 🤡\n\n" +
+        "Vocês gostam de making off né? Então tá ai um pouquinho 🤣🔥👌🏻\n\n" +
+        "#floripa #fotografo #videomaker #terrifier3"
+      ],
+      video: "/assets/videos/VÍDEO-2.mp4"
+    },
+  ]
+
+  const fotosPessoais = [
+    {
+      title: "FOTOS TERRIFIER",
+      descript: [
+        "E essa produção? @officialterrifier3 @terrifierbrazil"
+      ],
+      materia: [
+        "Maquiagem : @mystikaproducoes\n" +
+        "Ator : @guilhermehsou\n" +
+        "Audiovisual @floripafotografia.cs"
+      ],
+      image: "/assets/fotos/foto-1.jpg",
+      image2: "/assets/fotos/foto-2.jpg",
+      image3: "/assets/fotos/foto-3.jpg",
+      altimage: 'Foto 1 Terrifier',
+      altimage2: 'Foto 2 Terrifier',
+      altimage3: 'Foto 3 Terrifier',
+    },
+  ]
+
   const [paginaAtual, setPaginaAtual] = useState(0);
   const itensPorPagina = 1;
   const totalPaginas = Math.ceil(materias.length / itensPorPagina);
@@ -554,106 +647,262 @@ function ProjetosPage() {
     (paginaAtualFoto + 1) * itensPorPaginaFoto
   );
 
+  const [paginaAtualVideoP, setPaginaAtualVideoP] = useState(0);
+  const itensPorPaginaVideoP = 1;
+  const totalPaginasVideoP = Math.ceil(videosPessoais.length / itensPorPaginaVideoP);
+
+  const VideosPessPaginados = videosPessoais.slice(
+    paginaAtualVideoP * itensPorPaginaVideoP,
+    (paginaAtualVideoP + 1) * itensPorPaginaVideoP
+  );
+
+  const [paginaAtualFotoP, setPaginaAtualFotoP] = useState(0);
+  const itensPorPaginaFotoP = 1;
+  const totalPaginasFotoP = Math.ceil(fotosPessoais.length / itensPorPaginaFotoP);
+
+  const FotosPessPaginadas = fotosPessoais.slice(
+    paginaAtualFotoP * itensPorPaginaFotoP,
+    (paginaAtualFotoP + 1) * itensPorPaginaFotoP
+  );
+
+  const [prefeituraHidden, setPrefeituraHidden] = useState(false);
+  const [pessoalHidden, setPessoalHidden] = useState(false);
+  const [koiHidden, setKoiHidden] = useState(false);
+
+  const handleHiddenPrefeituraProjects = () => {
+    setPrefeituraHidden(!prefeituraHidden);
+  }
+
+  const handleHiddenPessoalProjects = () => {
+    setPessoalHidden(!pessoalHidden);
+  }
+
+  const handleHiddenKoiProjects = () => {
+    setKoiHidden(!koiHidden);
+  }
+
   return (
     <ContainerProjetosPage>
       <TitlePageProjetos>Projetos</TitlePageProjetos>
 
       <SubcontainerTextsProjetos>
         <TextDefaultProjetos>
-          Bem-vindo à minha página de projetos! Aqui você encontra uma seleção dos trabalhos que já realizei, desde matérias que escrevi e roteiros que desenvolvi até vídeos nos quais atuei ou editei.
+          Bem-vindo à minha página de projetos! Aqui você encontra uma seleção dos trabalhos que já realizei, desde matérias que escrevi e roteiros que desenvolvi até vídeos em que atuei, editei ou produzi.
         </TextDefaultProjetos>
       </SubcontainerTextsProjetos>
 
-      <TextDefaultProjetos style={{ fontSize: '1.2rem' }}>Matérias</TextDefaultProjetos>
+      {prefeituraHidden ? (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <TxtPaginacao style={{ fontSize: '1.3rem', margin: '.5rem 0' }}>Prefeitura</TxtPaginacao>
+          <IoIosArrowRoundDown onClick={handleHiddenPrefeituraProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
+        </div>
+      ) : (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <TxtPaginacao style={{ fontSize: '1.3rem', margin: '.5rem 0' }}>Prefeitura</TxtPaginacao>
+          <IoIosArrowRoundForward onClick={handleHiddenPrefeituraProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
+        </div>
+      )}
 
-      {materiasPaginadas.map((materia, index) => (
-        <SubcontainerTextsImgProjetos key={index}> {/* row */}
-          <SubcontainerTextsDescriptProjetos> {/* column text */}
-            <TituloTextDescriptProjetos>{materia.title}</TituloTextDescriptProjetos>
-            <TextDefaultProjetos>{materia.descript}</TextDefaultProjetos>
-            <TextDefaultProjetos>{materia.materia}</TextDefaultProjetos>
-            <LinkMaterias to={materia.linkMateria} target='_blank'>Link da matéria</LinkMaterias>
-          </SubcontainerTextsDescriptProjetos>
+      {prefeituraHidden && (
+        <>
+          <TxtPaginacao style={{ fontSize: '1.3rem', marginTop: '1rem' }}>Matérias</TxtPaginacao>
+          <TxtPaginacao style={{ margin: '1rem 0' }}>Algumas matérias que eu escrevi, não coloquei todas, mas selecionei as que considero de maior destaque.</TxtPaginacao>
 
-          <SubcontainerImgsProjetos> {/* img */}
-            <ImgsProjetos src={materia.image} alt={materia.altimage} />
-          </SubcontainerImgsProjetos>
-        </SubcontainerTextsImgProjetos>
-      ))}
+          {materiasPaginadas.map((materia, index) => (
+            <SubcontainerTextsImgProjetos key={index}> {/* row */}
+              <SubcontainerTextsDescriptProjetos> {/* column text */}
+                <TituloTextDescriptProjetos>{materia.title}</TituloTextDescriptProjetos>
+                <TextDefaultProjetos>{materia.descript}</TextDefaultProjetos>
+                <TextDefaultProjetos>{materia.materia}</TextDefaultProjetos>
+                <LinkMaterias to={materia.linkMateria} target='_blank'>Link da matéria</LinkMaterias>
+              </SubcontainerTextsDescriptProjetos>
 
-      <Paginacao>
-        <PagBtn onClick={() => setPaginaAtual(paginaAtual - 1)} disabled={paginaAtual === 0}>
-          Anterior
-        </PagBtn>
-        <TxtPaginacao>
-          Matéria {paginaAtual + 1} de {totalPaginas}
-        </TxtPaginacao>
-        <PagBtn onClick={() => setPaginaAtual(paginaAtual + 1)} disabled={paginaAtual === totalPaginas - 1}>
-          Próxima
-        </PagBtn>
-      </Paginacao>
+              <SubcontainerImgsProjetos> {/* img */}
+                <ImgsProjetos src={materia.image} alt={materia.altimage} />
+              </SubcontainerImgsProjetos>
+            </SubcontainerTextsImgProjetos>
+          ))}
 
-      <TextDefaultProjetos style={{ fontSize: '1.2rem' }}>Vídeos</TextDefaultProjetos>
+          <Paginacao>
+            <PagBtn onClick={() => setPaginaAtual(paginaAtual - 1)} disabled={paginaAtual === 0}>
+              Anterior
+            </PagBtn>
+            <TxtPaginacao>
+              Matéria {paginaAtual + 1} de {totalPaginas}
+            </TxtPaginacao>
+            <PagBtn onClick={() => setPaginaAtual(paginaAtual + 1)} disabled={paginaAtual === totalPaginas - 1}>
+              Próxima
+            </PagBtn>
+          </Paginacao>
 
-      {VideosPaginados.map((video, index) => (
-        <SubcontainerTextsImgProjetos key={index}> {/* row */}
-          <SubcontainerTextsDescriptProjetos> {/* column text */}
-            <TituloTextDescriptProjetos>{video.title}</TituloTextDescriptProjetos>
-            <TextDefaultProjetos>{video.descript}</TextDefaultProjetos>
-            <TextDefaultProjetos>{video.materia}</TextDefaultProjetos>
-          </SubcontainerTextsDescriptProjetos>
+          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Vídeos</TxtPaginacao>
+          <TxtPaginacao>Alguns vídeos nos quais atuei, editei ou escrevi o roteiro. Não coloquei todos, mas selecionei os que considero de maior destaque.</TxtPaginacao>
 
-          <SubcontainerImgsProjetos> {/* img */}
-            <VideoProjetos controls key={video.video}>
-              <source src={video.video} />
-            </VideoProjetos>
-          </SubcontainerImgsProjetos>
-        </SubcontainerTextsImgProjetos>
-      ))}
+          {VideosPaginados.map((video, index) => (
+            <SubcontainerTextsImgProjetos key={index}> {/* row */}
+              <SubcontainerTextsDescriptProjetos> {/* column text */}
+                <TituloTextDescriptProjetos>{video.title}</TituloTextDescriptProjetos>
+                <TextDefaultProjetos>{video.descript}</TextDefaultProjetos>
+                <TextDefaultProjetos>{video.materia}</TextDefaultProjetos>
+              </SubcontainerTextsDescriptProjetos>
 
-      <Paginacao>
-        <PagBtn onClick={() => setPaginaAtualVideo(paginaAtualVideo - 1)} disabled={paginaAtualVideo === 0}>
-          Anterior
-        </PagBtn>
-        <TxtPaginacao>
-          Vídeo {paginaAtualVideo + 1} de {totalPaginasVideo}
-        </TxtPaginacao>
-        <PagBtn onClick={() => setPaginaAtualVideo(paginaAtualVideo + 1)} disabled={paginaAtualVideo === totalPaginasVideo - 1}>
-          Próxima
-        </PagBtn>
-      </Paginacao>
+              <SubcontainerImgsProjetos> {/* img */}
+                <VideoProjetos controls key={video.video}>
+                  <source src={video.video} />
+                </VideoProjetos>
+              </SubcontainerImgsProjetos>
+            </SubcontainerTextsImgProjetos>
+          ))}
 
-      <TextDefaultProjetos style={{ fontSize: '1.2rem' }}>Fotos</TextDefaultProjetos>
+          <Paginacao>
+            <PagBtn onClick={() => setPaginaAtualVideo(paginaAtualVideo - 1)} disabled={paginaAtualVideo === 0}>
+              Anterior
+            </PagBtn>
+            <TxtPaginacao>
+              Vídeo {paginaAtualVideo + 1} de {totalPaginasVideo}
+            </TxtPaginacao>
+            <PagBtn onClick={() => setPaginaAtualVideo(paginaAtualVideo + 1)} disabled={paginaAtualVideo === totalPaginasVideo - 1}>
+              Próxima
+            </PagBtn>
+          </Paginacao>
 
-      {FotosPaginadas.map((foto, index) => (
-        <SubcontainerTextsImgProjetos key={index}> {/* row */}
-          <SubcontainerTextsDescriptProjetos> {/* column text */}
-            <TituloTextDescriptProjetos>{foto.title}</TituloTextDescriptProjetos>
-            <TextDefaultProjetos>{foto.descript}</TextDefaultProjetos>
-            <TextDefaultProjetos>{foto.materia}</TextDefaultProjetos>
-          </SubcontainerTextsDescriptProjetos>
+          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Fotos</TxtPaginacao>
+          <TxtPaginacao>Alguns cards para os quais escrevi o roteiro. Não coloquei todos, mas selecionei os que considero os de maior destaque recente.</TxtPaginacao>
 
-          <SubcontainerImgs>
-            {foto.image && <ImgMini src={foto.image} alt={foto.altimage} />}
-            {foto.image2 && <ImgMini src={foto.image2} alt={foto.altimage2} />}
-            {foto.image3 && <ImgMini src={foto.image3} alt={foto.altimage3} />}
-            {foto.image4 && <ImgMini src={foto.image4} alt={foto.altimage4} />}
-          </SubcontainerImgs>
+          {FotosPaginadas.map((foto, index) => (
+            <SubcontainerTextsImgProjetos key={index}> {/* row */}
+              <SubcontainerTextsDescriptProjetos> {/* column text */}
+                <TituloTextDescriptProjetos>{foto.title}</TituloTextDescriptProjetos>
+                <TextDefaultProjetos>{foto.descript}</TextDefaultProjetos>
+                <TextDefaultProjetos>{foto.materia}</TextDefaultProjetos>
+              </SubcontainerTextsDescriptProjetos>
 
-        </SubcontainerTextsImgProjetos>
-      ))}
+              <SubcontainerImgs>
+                {foto.image && <ImgMini src={foto.image} alt={foto.altimage} />}
+                {foto.image2 && <ImgMini src={foto.image2} alt={foto.altimage2} />}
+                {foto.image3 && <ImgMini src={foto.image3} alt={foto.altimage3} />}
+                {foto.image4 && <ImgMini src={foto.image4} alt={foto.altimage4} />}
+              </SubcontainerImgs>
 
-      <Paginacao>
-        <PagBtn onClick={() => setPaginaAtualFoto(paginaAtualFoto - 1)} disabled={paginaAtualFoto === 0}>
-          Anterior
-        </PagBtn>
-        <TxtPaginacao>
-          Foto {paginaAtualFoto + 1} de {totalPaginasFoto}
-        </TxtPaginacao>
-        <PagBtn onClick={() => setPaginaAtualFoto(paginaAtualFoto + 1)} disabled={paginaAtualFoto === totalPaginasFoto - 1}>
-          Próxima
-        </PagBtn>
-      </Paginacao>
+            </SubcontainerTextsImgProjetos>
+          ))}
+
+          <Paginacao>
+            <PagBtn onClick={() => setPaginaAtualFoto(paginaAtualFoto - 1)} disabled={paginaAtualFoto === 0}>
+              Anterior
+            </PagBtn>
+            <TxtPaginacao>
+              Foto {paginaAtualFoto + 1} de {totalPaginasFoto}
+            </TxtPaginacao>
+            <PagBtn onClick={() => setPaginaAtualFoto(paginaAtualFoto + 1)} disabled={paginaAtualFoto === totalPaginasFoto - 1}>
+              Próxima
+            </PagBtn>
+          </Paginacao>
+        </>
+      )}
+
+      {koiHidden ? (
+        <div style={{ display: 'flex', alignItems: 'center', margin: '.5rem 0' }}>
+          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Koi</TxtPaginacao>
+          <IoIosArrowRoundDown onClick={handleHiddenKoiProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
+        </div>
+      ) : (
+        <div style={{ display: 'flex', alignItems: 'center', margin: '.5rem 0' }}>
+          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Koi</TxtPaginacao>
+          <IoIosArrowRoundForward onClick={handleHiddenKoiProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
+        </div>
+      )}
+
+      {koiHidden && (
+        <>
+          <TxtPaginacao style={{ margin: '1rem 0' }}>
+            Aqui estão alguns materiais que escrevi para a Koi, para alguns dos nossos clientes. A maioria foi publicada em veículos de comunicação e teve boa repercussão. Paralelamente, tenho experiência em atendimento à imprensa, relacionamento com clientes e outras atividades correlatas. Também administro planilhas de mailing, faço follow-up com as fontes, elaboro planilhas de clipagem e encaminho os resultados aos clientes. Além disso, utilizei a KoIA para treinar a ferramenta sobre nossos clientes da Koi.
+          </TxtPaginacao>
+          {koi.map((k, index) => (
+            <SubcontainerTextsDescriptProjetos key={index}> {/* column text */}
+              <TxtDefault>{k.cliente}</TxtDefault>
+              <LinkDownloadPdf href={k.pdf} download>{k.nome}</LinkDownloadPdf>
+            </SubcontainerTextsDescriptProjetos>
+          ))}
+        </>
+      )}
+
+      {pessoalHidden ? (
+        <div style={{ display: 'flex', alignItems: 'center', margin: '.5rem 0' }}>
+          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Pessoais</TxtPaginacao>
+          <IoIosArrowRoundDown onClick={handleHiddenPessoalProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
+        </div>
+      ) : (
+        <div style={{ display: 'flex', alignItems: 'center', margin: '.5rem 0' }}>
+          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Pessoais</TxtPaginacao>
+          <IoIosArrowRoundForward onClick={handleHiddenPessoalProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
+        </div>
+      )}
+
+      {pessoalHidden && (
+        <>
+          <TxtPaginacao style={{ margin: '1rem 0' }}>Uma vez me fantasiei de Art, do filme Terrifier. Contei com a ajuda de um amigo filmmaker e fotógrafo, além de uma amiga maquiadora. Sou uma pessoa com bastante contatos.</TxtPaginacao>
+          {VideosPessPaginados.map((video, index) => (
+            <SubcontainerTextsImgProjetos key={index}> {/* row */}
+              <SubcontainerTextsDescriptProjetos> {/* column text */}
+                <TituloTextDescriptProjetos>{video.title}</TituloTextDescriptProjetos>
+                <TextDefaultProjetos>{video.descript}</TextDefaultProjetos>
+                <TextDefaultProjetos>{video.materia}</TextDefaultProjetos>
+              </SubcontainerTextsDescriptProjetos>
+
+              <SubcontainerImgsProjetos> {/* img */}
+                <VideoProjetos controls key={video.video}>
+                  <source src={video.video} />
+                </VideoProjetos>
+              </SubcontainerImgsProjetos>
+            </SubcontainerTextsImgProjetos>
+          ))}
+
+          <Paginacao>
+            <PagBtn onClick={() => setPaginaAtualVideoP(paginaAtualVideoP - 1)} disabled={paginaAtualVideoP === 0}>
+              Anterior
+            </PagBtn>
+            <TxtPaginacao>
+              Vídeo {paginaAtualVideoP + 1} de {totalPaginasVideoP}
+            </TxtPaginacao>
+            <PagBtn onClick={() => setPaginaAtualVideoP(paginaAtualVideoP + 1)} disabled={paginaAtualVideoP === totalPaginasVideoP - 1}>
+              Próxima
+            </PagBtn>
+          </Paginacao>
+
+          <TextDefaultProjetos style={{ fontSize: '1.2rem' }}>Fotos</TextDefaultProjetos>
+
+          {FotosPessPaginadas.map((foto, index) => (
+            <SubcontainerTextsImgProjetos key={index}> {/* row */}
+              <SubcontainerTextsDescriptProjetos> {/* column text */}
+                <TituloTextDescriptProjetos>{foto.title}</TituloTextDescriptProjetos>
+                <TextDefaultProjetos>{foto.descript}</TextDefaultProjetos>
+                <TextDefaultProjetos>{foto.materia}</TextDefaultProjetos>
+              </SubcontainerTextsDescriptProjetos>
+
+              <SubcontainerImgs>
+                {foto.image && <ImgMini src={foto.image} alt={foto.altimage} />}
+                {foto.image2 && <ImgMini src={foto.image2} alt={foto.altimage2} />}
+                {foto.image3 && <ImgMini src={foto.image3} alt={foto.altimage3} />}
+                {foto.image4 && <ImgMini src={foto.image4} alt={foto.altimage4} />}
+              </SubcontainerImgs>
+
+            </SubcontainerTextsImgProjetos>
+          ))}
+
+          <Paginacao>
+            <PagBtn onClick={() => setPaginaAtualFotoP(paginaAtualFotoP - 1)} disabled={paginaAtualFotoP === 0}>
+              Anterior
+            </PagBtn>
+            <TxtPaginacao>
+              Foto {paginaAtualFotoP + 1} de {totalPaginasFotoP}
+            </TxtPaginacao>
+            <PagBtn onClick={() => setPaginaAtualFotoP(paginaAtualFotoP + 1)} disabled={paginaAtualFotoP === totalPaginasFotoP - 1}>
+              Próxima
+            </PagBtn>
+          </Paginacao>
+        </>
+      )}
 
     </ContainerProjetosPage>
   )

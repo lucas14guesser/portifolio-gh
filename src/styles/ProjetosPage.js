@@ -6,21 +6,17 @@ export const ContainerProjetosPage = styled.div`
     flex-direction: column;
     justify-content: center;
     margin: 7rem 30rem;
-    gap: 3rem;
 
     @media (max-width: 430px) {
         margin: 7rem 2rem;
-        gap: 1rem;
     }
 
     @media (min-width: 431px) and (max-width: 600px) {
         margin: 7rem 4rem;
-        gap: 1rem;
     }
 
     @media (min-width: 601px) and (max-width: 800px) {
         margin: 7rem 6rem;
-        gap: 1rem;
     }
 
     @media (min-width: 801px) and (max-width: 1250px) {
@@ -101,6 +97,7 @@ export const SubcontainerTextsDescriptProjetos = styled.div`
     flex-direction: column;
     width: 60%;
     padding: 1rem;
+    background-color: #EAEAEA;
 
     @media (max-width: 430px) {
         width: 90%;
@@ -211,4 +208,8 @@ export const ImgMini = styled.img`
   &:hover {
     transform: scale(1.7);
   }
+`
+export const LinkDownloadPdf = styled.a`
+    text-decoration: underline;
+    color: #000;
 `
