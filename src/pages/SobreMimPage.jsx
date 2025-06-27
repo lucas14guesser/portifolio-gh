@@ -21,7 +21,7 @@ function SobreMimPage() {
       altImage: 'Foto minha com meus amigos'
     },
     {
-      image: "public/assets/fotos/eu-isa.jpg",
+      image: "/assets/fotos/eu-isa.jpg",
       altImage: 'Uma foto minha com a Isa'
     },
     {
