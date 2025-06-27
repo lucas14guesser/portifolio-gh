@@ -3,7 +3,7 @@ import{d as i,a as g,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
     flex-direction: column;
     justify-content: center;
     margin: 7rem 30rem;
-    gap: 3rem;
+    gap: 1rem;
 
     @media (max-width: 430px) {
         margin: 7rem 2rem;

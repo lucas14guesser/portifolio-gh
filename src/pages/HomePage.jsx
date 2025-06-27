@@ -29,9 +29,9 @@ function HomePage() {
                 <TxtDefault>Esse sou eu!</TxtDefault>
 
                 <SubcontainerBtn> {/* container row*/}
-                    <BtnDefault to='/sobre-mim'>Sobre mim</BtnDefault>
                     <BtnDefault to='/curriculo'>Currículo</BtnDefault>
                     <BtnDefault to='/projetos'>Projetos</BtnDefault>
+                    <BtnDefault to='/sobre-mim'>Sobre mim</BtnDefault>
                 </SubcontainerBtn>
 
                 <TextHomeDescript>

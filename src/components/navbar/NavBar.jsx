@@ -8,17 +8,17 @@ function NavBar() {
                 <LogoNav>Guilherme H. Souza</LogoNav>
             </LinkLogo>
             <ListaNav>
-                <LinkItemLista to='/sobre-mim'>
-                    <ItemListaNav>Sobre mim</ItemListaNav>
-                </LinkItemLista>
                 <LinkItemLista to='/curriculo'>
                     <ItemListaNav>Currículo</ItemListaNav>
                 </LinkItemLista>
                 <LinkItemLista to='/projetos'>
                     <ItemListaNav>Projetos</ItemListaNav>
                 </LinkItemLista>
+                <LinkItemLista to='/sobre-mim'>
+                    <ItemListaNav>Sobre mim</ItemListaNav>
+                </LinkItemLista>
                 <LinkItemLista to='/contato'>
-                    <ItemListaNav style={{borderRight: 'none'}}>Contato</ItemListaNav>
+                    <ItemListaNav style={{ borderRight: 'none' }}>Contato</ItemListaNav>
                 </LinkItemLista>
             </ListaNav>
         </ContainerNavBar>
