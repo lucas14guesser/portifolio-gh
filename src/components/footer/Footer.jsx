@@ -2,12 +2,13 @@ import React from 'react'
 import { ContainerFooter, LinkItemSocialMediaFooter, LinkPolit, SectionDados, SubContainerCopyPolit, SubcontainerDadosFooter, TextSec, TextSectionDados } from '../../styles/FooterStyles'
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { LinkSocialMedia } from '../../styles/HomePageStyles';
+import { getYear } from './FooterServices';
 
 function Footer() {
     return (
         <ContainerFooter>
             <SubContainerCopyPolit>
-                <TextSec>&copy; Todos os direitos reservados</TextSec>
+                <TextSec>&copy; {getYear()} Desenvolvido por LG Tech. Todos os direitos reservados.</TextSec>
             </SubContainerCopyPolit>
 
             <SubcontainerDadosFooter>

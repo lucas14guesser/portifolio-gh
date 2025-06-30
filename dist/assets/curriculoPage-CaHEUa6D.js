@@ -96,12 +96,12 @@ import{d as i,a as g,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";im
 
     @media (max-width: 430px) {
         width: 92%;
-        height: 20rem;
+        height: 34rem;
     }
 
     @media (min-width: 431px) and (max-width: 600px) {
         width: 92%;
-        height: 20rem;
+        height: 30rem;
     }
 
     @media (min-width: 601px) and (max-width: 800px) {

@@ -149,15 +149,18 @@ import{d as a,j as e}from"./styled-components.browser.esm-BNWIvhS-.js";import"./
     }
 
     @media (max-width: 430px) {
-        height: 20rem;
+        width: 9rem;
+        height: 9rem;
     }
 
     @media (min-width: 431px) and (max-width: 600px) {
-        height: 30rem;
+        width: 10rem;
+        height: 10rem;
     }
 
     @media (min-width: 601px) and (max-width: 800px) {
-        height: 40rem;
+        width: 11rem;
+        height: 11rem;
     }
 `,p=a.div`
     display: flex;
