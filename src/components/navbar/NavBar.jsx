@@ -17,9 +17,6 @@ function NavBar() {
                 <LinkItemLista to='/sobre-mim'>
                     <ItemListaNav>Sobre mim</ItemListaNav>
                 </LinkItemLista>
-                <LinkItemLista to='/contato'>
-                    <ItemListaNav style={{ borderRight: 'none' }}>Contato</ItemListaNav>
-                </LinkItemLista>
             </ListaNav>
         </ContainerNavBar>
     )
