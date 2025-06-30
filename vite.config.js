@@ -13,7 +13,6 @@ export default defineConfig({
         curriculoPage: resolve(__dirname, './src/pages/CurriculoPage.jsx'),
         projetosPage: resolve(__dirname, './src/pages/ProjetosPage.jsx'),
         sobreMimPage: resolve(__dirname, './src/pages/SobreMimPage.jsx'),
-        contatoPage: resolve(__dirname, './src/pages/ContatoPage.jsx'),
       }
     }
   }

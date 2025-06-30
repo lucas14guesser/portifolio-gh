@@ -4,7 +4,6 @@ import HomePage from '../pages/HomePage'
 import SobreMimPage from '../pages/SobreMimPage'
 import ProjetosPage from '../pages/ProjetosPage'
 import CurriculoPage from '../pages/CurriculoPage'
-import ContatoPage from '../pages/ContatoPage'
 
 function Router() {
   return (
@@ -13,7 +12,6 @@ function Router() {
         <Route path='/sobre-mim' element={<SobreMimPage /> } />
         <Route path='/projetos' element={<ProjetosPage /> } />
         <Route path='/curriculo' element={<CurriculoPage /> } />
-        <Route path='/contato' element={<ContatoPage /> } />
     </Routes>
   )
 }
