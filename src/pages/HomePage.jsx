@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { BtnDefault, ContainerHomePage, ImgProfile, LinkSocialMedia, SubcontainerBtn, SubcontainerData, SubcontainerDescript, SubcontainerProfile, SubcontainerSocialMedia, TextHomeDescript, TituloProfile, TxtDefault } from '../styles/HomePageStyles';
+import { BtnDefault, ContainerHomePage, ImgProfile, LinkSocialMedia, ModalImg, SubcontainerBtn, SubcontainerData, SubcontainerDescript, SubcontainerProfile, SubcontainerSocialMedia, TextHomeDescript, TituloProfile, TxtDefault } from '../styles/HomePageStyles';
 
 function HomePage() {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <ContainerHomePage> {/* container row*/}
             <SubcontainerProfile> {/* container column*/}
                 <SubcontainerData> {/* container column img name border-bottom role*/}
-                    <ImgProfile src="/assets/profileimg.jpg" alt="Foto de perfil" />
+                    <ImgProfile src="/assets/profileimg.jpg" alt="Foto de perfil" onClick={() => setIsOpen(true)} />
+                    <ModalImg $isOpen={isOpen} onClick={() => setIsOpen(false)}>
+                        <img src="/assets/profileimg.jpg" alt="Foto de perfil ampliada" />
+                    </ModalImg>
 
                     <TituloProfile>Guilherme H. <br />Souza</TituloProfile> {/* border-bottom padding+*/}
 
@@ -26,7 +31,6 @@ function HomePage() {
 
             <SubcontainerDescript> {/* container column title words div 2btn descript*/}
                 <TituloProfile>Bem-vindos ao meu portfólio!</TituloProfile>
-                <TxtDefault>Esse sou eu!</TxtDefault>
 
                 <SubcontainerBtn> {/* container row*/}
                     <BtnDefault to='/curriculo'>Currículo</BtnDefault>
@@ -35,7 +39,7 @@ function HomePage() {
                 </SubcontainerBtn>
 
                 <TextHomeDescript>
-                    Olá, me chamo Guilherme Henrique Souza, mas pode me chamar de Gui. Tenho 22 anos, sou bacharel em Jornalismo pela Unisul e atualmente curso pós-graduação em Jornalismo Esportivo e Multimídias pela mesma universidade. Atuei por dois anos em comunicação institucional e, atualmente, trabalho em uma agência de assessoria de imprensa. Tenho experiência na produção de releases, atendimento à imprensa, cobertura de eventos, além da criação de roteiros e conteúdos audiovisuais para redes sociais.
+                    Olá, me chamo Guilherme Henrique Souza, mas pode me chamar de Gui. Tenho 22 anos, sou bacharel em Jornalismo pela Unisul e atualmente curso pós-graduação em Jornalismo Esportivo e Multimídias, também pela Unisul. Atuei por dois anos na área de comunicação institucional e, mais recentemente, tive uma experiência em uma agência de assessoria de imprensa. Tenho familiaridade com rotinas de suporte administrativo, produção de releases, atendimento à imprensa, cobertura de eventos, além da criação de roteiros e conteúdos para redes sociais.
                 </TextHomeDescript>
             </SubcontainerDescript>
         </ContainerHomePage>

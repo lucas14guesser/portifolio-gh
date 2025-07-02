@@ -63,10 +63,29 @@ export const SubcontainerData = styled.div`
     align-items: center;
     padding: 1rem;
 `
+export const ModalImg = styled.div`
+  display: ${({ $isOpen }) => ($isOpen ? 'flex' : 'none')};
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+  }
+`
 export const ImgProfile = styled.img`
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
+    cursor: pointer;
 
     @media (max-width: 430px) {
         width: 7rem;

@@ -486,54 +486,6 @@ function ProjetosPage() {
     },
   ];
 
-  const videosPessoais = [
-    {
-      title: "Terrifier",
-      descript: [
-        "PROJETO PESSOAL DE COSPLAY"
-      ],
-      materia: [
-        "terrifier day 🤡\n\n" +
-        "direção e edição: @floripafotografia.cs 🎬\n" +
-        "maquiagem: @beleza.mystika 🎨\n" +
-        "figurino: @disfarcefantasias 🤵🏻‍♂️\n"
-      ],
-      video: "/assets/videos/VÍDEO-1.mp4"
-    },
-    {
-      title: "Terrifier",
-      descript: [
-        "PROJETO PESSOAL DE COSPLAY"
-      ],
-      materia: [
-        "terrifier day 🤡\n\n" +
-        "Vocês gostam de making off né? Então tá ai um pouquinho 🤣🔥👌🏻\n\n" +
-        "#floripa #fotografo #videomaker #terrifier3"
-      ],
-      video: "/assets/videos/VÍDEO-2.mp4"
-    },
-  ]
-
-  const fotosPessoais = [
-    {
-      title: "FOTOS TERRIFIER",
-      descript: [
-        "E essa produção? @officialterrifier3 @terrifierbrazil"
-      ],
-      materia: [
-        "Maquiagem : @mystikaproducoes\n" +
-        "Ator : @guilhermehsou\n" +
-        "Audiovisual @floripafotografia.cs"
-      ],
-      image: "/assets/fotos/foto-1.jpg",
-      image2: "/assets/fotos/foto-2.jpg",
-      image3: "/assets/fotos/foto-3.jpg",
-      altimage: 'Foto 1 Terrifier',
-      altimage2: 'Foto 2 Terrifier',
-      altimage3: 'Foto 3 Terrifier',
-    },
-  ]
-
   const [paginaAtual, setPaginaAtual] = useState(0);
   const itensPorPagina = 1;
   const totalPaginas = Math.ceil(materias.length / itensPorPagina);
@@ -561,44 +513,15 @@ function ProjetosPage() {
     (paginaAtualFoto + 1) * itensPorPaginaFoto
   );
 
-  const [paginaAtualVideoP, setPaginaAtualVideoP] = useState(0);
-  const itensPorPaginaVideoP = 1;
-  const totalPaginasVideoP = Math.ceil(videosPessoais.length / itensPorPaginaVideoP);
-
-  const VideosPessPaginados = videosPessoais.slice(
-    paginaAtualVideoP * itensPorPaginaVideoP,
-    (paginaAtualVideoP + 1) * itensPorPaginaVideoP
-  );
-
-  const [paginaAtualFotoP, setPaginaAtualFotoP] = useState(0);
-  const itensPorPaginaFotoP = 1;
-  const totalPaginasFotoP = Math.ceil(fotosPessoais.length / itensPorPaginaFotoP);
-
-  const FotosPessPaginadas = fotosPessoais.slice(
-    paginaAtualFotoP * itensPorPaginaFotoP,
-    (paginaAtualFotoP + 1) * itensPorPaginaFotoP
-  );
-
   const [prefeituraHidden, setPrefeituraHidden] = useState(false);
-  const [pessoalHidden, setPessoalHidden] = useState(false);
 
   const handleHiddenPrefeituraProjects = () => {
     setPrefeituraHidden(!prefeituraHidden);
   }
 
-  const handleHiddenPessoalProjects = () => {
-    setPessoalHidden(!pessoalHidden);
-  }
-
   return (
     <ContainerProjetosPage>
       <TitlePageProjetos>Projetos</TitlePageProjetos>
-
-      <SubcontainerTextsProjetos>
-        <TextDefaultProjetos>
-          Bem-vindo à minha página de projetos! Aqui você encontra uma seleção dos trabalhos que já realizei, desde matérias que escrevi e roteiros que desenvolvi até vídeos em que atuei, editei ou produzi.
-        </TextDefaultProjetos>
-      </SubcontainerTextsProjetos>
 
       {prefeituraHidden ? (
         <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -615,7 +538,6 @@ function ProjetosPage() {
       {prefeituraHidden && (
         <>
           <TxtPaginacao style={{ fontSize: '1.3rem', marginTop: '1rem' }}>Matérias</TxtPaginacao>
-          <TxtPaginacao style={{ margin: '1rem 0' }}>Algumas matérias que eu escrevi, não coloquei todas, mas selecionei as que considero de maior destaque.</TxtPaginacao>
 
           {materiasPaginadas.map((materia, index) => (
             <SubcontainerTextsImgProjetos key={index}> {/* row */}
@@ -645,7 +567,6 @@ function ProjetosPage() {
           </Paginacao>
 
           <TxtPaginacao style={{ fontSize: '1.3rem' }}>Vídeos</TxtPaginacao>
-          <TxtPaginacao>Alguns vídeos nos quais atuei, editei ou escrevi o roteiro. Não coloquei todos, mas selecionei os que considero de maior destaque.</TxtPaginacao>
 
           {VideosPaginados.map((video, index) => (
             <SubcontainerTextsImgProjetos key={index}> {/* row */}
@@ -676,7 +597,6 @@ function ProjetosPage() {
           </Paginacao>
 
           <TxtPaginacao style={{ fontSize: '1.3rem' }}>Fotos</TxtPaginacao>
-          <TxtPaginacao>Alguns cards para os quais escrevi o roteiro. Não coloquei todos, mas selecionei os que considero os de maior destaque recente.</TxtPaginacao>
 
           {FotosPaginadas.map((foto, index) => (
             <SubcontainerTextsImgProjetos key={index}> {/* row */}
@@ -709,84 +629,6 @@ function ProjetosPage() {
           </Paginacao>
         </>
       )}
-
-      {pessoalHidden ? (
-        <div style={{ display: 'flex', alignItems: 'center', margin: '.5rem 0' }}>
-          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Pessoais</TxtPaginacao>
-          <IoIosArrowRoundDown onClick={handleHiddenPessoalProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
-        </div>
-      ) : (
-        <div style={{ display: 'flex', alignItems: 'center', margin: '.5rem 0' }}>
-          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Pessoais</TxtPaginacao>
-          <IoIosArrowRoundForward onClick={handleHiddenPessoalProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
-        </div>
-      )}
-
-      {pessoalHidden && (
-        <>
-          <TxtPaginacao style={{ margin: '1rem 0' }}>Uma vez me fantasiei de Art, do filme Terrifier. Contei com a ajuda de um amigo filmmaker e fotógrafo, além de uma amiga maquiadora. Sou uma pessoa com bastante contatos.</TxtPaginacao>
-          {VideosPessPaginados.map((video, index) => (
-            <SubcontainerTextsImgProjetos key={index}> {/* row */}
-              <SubcontainerTextsDescriptProjetos> {/* column text */}
-                <TituloTextDescriptProjetos>{video.title}</TituloTextDescriptProjetos>
-                <TextDefaultProjetos>{video.descript}</TextDefaultProjetos>
-                <TextDefaultProjetos>{video.materia}</TextDefaultProjetos>
-              </SubcontainerTextsDescriptProjetos>
-
-              <SubcontainerImgsProjetos> {/* img */}
-                <VideoProjetos controls key={video.video}>
-                  <source src={video.video} />
-                </VideoProjetos>
-              </SubcontainerImgsProjetos>
-            </SubcontainerTextsImgProjetos>
-          ))}
-
-          <Paginacao>
-            <PagBtn onClick={() => setPaginaAtualVideoP(paginaAtualVideoP - 1)} disabled={paginaAtualVideoP === 0}>
-              Anterior
-            </PagBtn>
-            <TxtPaginacao>
-              Vídeo {paginaAtualVideoP + 1} de {totalPaginasVideoP}
-            </TxtPaginacao>
-            <PagBtn onClick={() => setPaginaAtualVideoP(paginaAtualVideoP + 1)} disabled={paginaAtualVideoP === totalPaginasVideoP - 1}>
-              Próxima
-            </PagBtn>
-          </Paginacao>
-
-          <TextDefaultProjetos style={{ fontSize: '1.2rem' }}>Fotos</TextDefaultProjetos>
-
-          {FotosPessPaginadas.map((foto, index) => (
-            <SubcontainerTextsImgProjetos key={index}> {/* row */}
-              <SubcontainerTextsDescriptProjetos> {/* column text */}
-                <TituloTextDescriptProjetos>{foto.title}</TituloTextDescriptProjetos>
-                <TextDefaultProjetos>{foto.descript}</TextDefaultProjetos>
-                <TextDefaultProjetos>{foto.materia}</TextDefaultProjetos>
-              </SubcontainerTextsDescriptProjetos>
-
-              <SubcontainerImgs>
-                {foto.image && <ImgMini src={foto.image} alt={foto.altimage} />}
-                {foto.image2 && <ImgMini src={foto.image2} alt={foto.altimage2} />}
-                {foto.image3 && <ImgMini src={foto.image3} alt={foto.altimage3} />}
-                {foto.image4 && <ImgMini src={foto.image4} alt={foto.altimage4} />}
-              </SubcontainerImgs>
-
-            </SubcontainerTextsImgProjetos>
-          ))}
-
-          <Paginacao>
-            <PagBtn onClick={() => setPaginaAtualFotoP(paginaAtualFotoP - 1)} disabled={paginaAtualFotoP === 0}>
-              Anterior
-            </PagBtn>
-            <TxtPaginacao>
-              Foto {paginaAtualFotoP + 1} de {totalPaginasFotoP}
-            </TxtPaginacao>
-            <PagBtn onClick={() => setPaginaAtualFotoP(paginaAtualFotoP + 1)} disabled={paginaAtualFotoP === totalPaginasFotoP - 1}>
-              Próxima
-            </PagBtn>
-          </Paginacao>
-        </>
-      )}
-
     </ContainerProjetosPage>
   )
 }
