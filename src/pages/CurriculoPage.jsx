@@ -5,13 +5,14 @@ import { PagBtn, Paginacao, TxtPaginacao } from '../styles/GlobalStyles';
 function CurriculoPage() {
   const experiencias = [
     {
-      data: "MARÇO DE 2025 - ATUAL",
+      data: "MARÇO DE 2025 - JULHO DE 2025",
       cargo: "Assessor de Imprensa (Pessoa Jurídica)",
       empresa: "Koi Comunicação",
       descricao: [
-        "– Produção de releases e acompanhamento de imprensa;",
-        "– Divulgação e clipagem para empresas como Juistreet e Greenvalley;",
-        "– Assistência no planejamento estratégico e produção de conteúdo. "
+        "– Assistência no planejamento estratégico e produção de conteúdo;",
+        "– Atendimento de clientes como Juistreet, Greenvalley e outros;",
+        "– Produção de releases;",
+        "– Divulgação e clipagem."
       ]
     },
     {
@@ -22,7 +23,7 @@ function CurriculoPage() {
         "SECRETARIA INTEGRADA DE COMUNICAÇÃO - REPÓRTER",
         "– Atuação especialmente nas Secretarias de Esportes e Cultura; ",
         "– Criação de conteúdo para redes sociais; ",
-        "– Produção de matérias, vídeos e cobertura fotográfica de eventos; Comunicação institucional;",
+        "– Produção de matérias e cobertura de eventos;",
         "– Atualização de portais públicos e realização de pesquisas históricas;",
         "– Apoio a professores e atletas em ações esportivas.",
         "CENTRO DE ATENDIMENTO AO CIDADÃO – ESTAGIÁRIO",

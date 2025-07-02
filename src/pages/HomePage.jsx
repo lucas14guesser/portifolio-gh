@@ -39,7 +39,7 @@ function HomePage() {
                 </SubcontainerBtn>
 
                 <TextHomeDescript>
-                    Olá, me chamo Guilherme Henrique Souza, mas pode me chamar de Gui. Tenho 22 anos, sou bacharel em Jornalismo pela Unisul e atualmente curso pós-graduação em Jornalismo Esportivo e Multimídias, também pela Unisul. Atuei por dois anos na área de comunicação institucional e, mais recentemente, tive uma experiência em uma agência de assessoria de imprensa. Tenho familiaridade com rotinas de suporte administrativo, produção de releases, atendimento à imprensa, cobertura de eventos, além da criação de roteiros e conteúdos para redes sociais.
+                    Oi! Tudo bem? Meu nome é Guilherme Henrique Souza, mas pode me chamar de Gui. Tenho 22 anos, sou bacharel em Jornalismo pela Unisul e atualmente curso pós-graduação em Jornalismo Esportivo e Multimídias, também pela mesma universidade. Atuei por dois anos na área de comunicação institucional e recentemente trabalhei em uma agência de assessoria de imprensa. Tenho experiência em suporte administrativo, produção de releases, atendimento à imprensa, cobertura de eventos, além da criação de roteiros e conteúdos para redes sociais.
                 </TextHomeDescript>
             </SubcontainerDescript>
         </ContainerHomePage>

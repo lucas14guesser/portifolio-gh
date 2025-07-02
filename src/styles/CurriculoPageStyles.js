@@ -99,7 +99,7 @@ export const SubcontainerDataCurriculo = styled.div`
     gap: 3rem;
     border: 1px solid #333333;
     width: 100%;
-    height: 31rem;
+    height: 29.5rem;
 
     @media (max-width: 430px) {
         width: 92%;
