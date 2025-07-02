@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { ContainerProjetosPage, ImgMini, ImgsProjetos, LinkDownloadPdf, LinkMaterias, SubcontainerImgs, SubcontainerImgsProjetos, SubcontainerTextsDescriptProjetos, SubcontainerTextsImgProjetos, SubcontainerTextsProjetos, TextDefaultProjetos, TitlePageProjetos, TituloTextDescriptProjetos, VideoProjetos } from '../styles/ProjetosPage'
+import { ContainerProjetosPage, ImgMini, ImgsProjetos, LinkMaterias, SubcontainerImgs, SubcontainerImgsProjetos, SubcontainerTextsDescriptProjetos, SubcontainerTextsImgProjetos, SubcontainerTextsProjetos, TextDefaultProjetos, TitlePageProjetos, TituloTextDescriptProjetos, VideoProjetos } from '../styles/ProjetosPage'
 import { PagBtn, Paginacao, TxtPaginacao } from '../styles/GlobalStyles';
 import { IoIosArrowRoundForward, IoIosArrowRoundDown } from "react-icons/io";
-import { TxtDefault } from '../styles/HomePageStyles';
 
 function ProjetosPage() {
   const materias = [
@@ -487,91 +486,6 @@ function ProjetosPage() {
     },
   ];
 
-  const koi = [
-    {
-      cliente: "Zah Empreendimentos",
-      nome: "Zah Amazônia",
-      pdf: "/assets/pdfs/zah-amazonia.pdf",
-    },
-    {
-      cliente: "Zah Empreendimentos",
-      nome: "Zah Amazônia Pós Evento",
-      pdf: "/assets/pdfs/zah-amazonia-pos.pdf",
-    },
-    {
-      cliente: "Greenvalley",
-      nome: "Winter Music 25",
-      pdf: "/assets/pdfs/winter-music-25.pdf",
-    },
-    {
-      cliente: "Greenvalley",
-      nome: "Road to Tomorrowland",
-      pdf: "/assets/pdfs/road-tomorrowland.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Nota Fictícia de Inauguração em Outros Países",
-      pdf: "/assets/pdfs/nota-ficticia-inauguracao-outros-paises.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Modelo de Cartinha de Press Kit",
-      pdf: "/assets/pdfs/modelo-cartinha-press-kit.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Convite Fictício Inauguração Juistreet São José",
-      pdf: "/assets/pdfs/convite-ficticio-modelo-inauguração-juistreet-sao-jose.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Relatório de Treinamento KoIA para Ju",
-      pdf: "/assets/pdfs/relatorio-treinamento-koia-ju.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Release de Lançamento Hots Smoothies",
-      pdf: "/assets/pdfs/release-lancamento-hots-smoothies.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Mini Bio Renato Muniz",
-      pdf: "/assets/pdfs/mini-bio-renato-muniz.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Esqueleto do Release de Inauguração em Mogi, Bauru e Arujá + Reforço Vila Mariana (SP)",
-      pdf: "/assets/pdfs/esqueleto-release-inauguração-mogi-bauru-aruja-reforco-vila-mariana-sp.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Release Inauguração Porto Alegre",
-      pdf: "/assets/pdfs/release-inauguracao-porto-alegre.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Release Inauguração Vila Mariana",
-      pdf: "/assets/pdfs/release-inauguracao-vila-mariana.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Release Abertura Caxias do Sul",
-      pdf: "/assets/pdfs/release-abertura-caxias-sul.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Release Institucional Juistreet",
-      pdf: "/assets/pdfs/release-institucional-juistreet.pdf",
-    },
-    {
-      cliente: "Juistreet",
-      nome: "Boilerplate Juistreet",
-      pdf: "/assets/pdfs/boilerplate-juistreet.pdf",
-    },
-
-
-  ]
-
   const videosPessoais = [
     {
       title: "Terrifier",
@@ -667,7 +581,6 @@ function ProjetosPage() {
 
   const [prefeituraHidden, setPrefeituraHidden] = useState(false);
   const [pessoalHidden, setPessoalHidden] = useState(false);
-  const [koiHidden, setKoiHidden] = useState(false);
 
   const handleHiddenPrefeituraProjects = () => {
     setPrefeituraHidden(!prefeituraHidden);
@@ -675,10 +588,6 @@ function ProjetosPage() {
 
   const handleHiddenPessoalProjects = () => {
     setPessoalHidden(!pessoalHidden);
-  }
-
-  const handleHiddenKoiProjects = () => {
-    setKoiHidden(!koiHidden);
   }
 
   return (
@@ -798,32 +707,6 @@ function ProjetosPage() {
               Próxima
             </PagBtn>
           </Paginacao>
-        </>
-      )}
-
-      {koiHidden ? (
-        <div style={{ display: 'flex', alignItems: 'center', margin: '.5rem 0' }}>
-          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Koi</TxtPaginacao>
-          <IoIosArrowRoundDown onClick={handleHiddenKoiProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
-        </div>
-      ) : (
-        <div style={{ display: 'flex', alignItems: 'center', margin: '.5rem 0' }}>
-          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Koi</TxtPaginacao>
-          <IoIosArrowRoundForward onClick={handleHiddenKoiProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
-        </div>
-      )}
-
-      {koiHidden && (
-        <>
-          <TxtPaginacao style={{ margin: '1rem 0' }}>
-            Aqui estão alguns materiais que escrevi para a Koi, para alguns dos nossos clientes. A maioria foi publicada em veículos de comunicação e teve boa repercussão. Paralelamente, tenho experiência em atendimento à imprensa, relacionamento com clientes e outras atividades correlatas. Também administro planilhas de mailing, faço follow-up com as fontes, elaboro planilhas de clipagem e encaminho os resultados aos clientes. Além disso, utilizei a KoIA para treinar a ferramenta sobre nossos clientes da Koi.
-          </TxtPaginacao>
-          {koi.map((k, index) => (
-            <SubcontainerTextsDescriptProjetos key={index}> {/* column text */}
-              <TxtDefault>{k.cliente}</TxtDefault>
-              <LinkDownloadPdf href={k.pdf} download>{k.nome}</LinkDownloadPdf>
-            </SubcontainerTextsDescriptProjetos>
-          ))}
         </>
       )}
 
