@@ -485,38 +485,77 @@ function ProjetosPage() {
       altimage: 'Foto Neymar no carnaval em SJ',
     },
   ];
+  const koiReleases = [
+    {
+      title: 'Greenvalley',
+      descript: 'The Road to Tomorrowland Brasil e Winter Music Festival 25',
+      link: 'https://www.nsctotal.com.br/noticias/greenvalley-anuncia-dois-dos-maiores-eventos-de-musica-eletronica-de-2025-the-road-to-tomorrowland-brasil-e-a-17a-edicao-do-winter-music',
+      foto: '/assets/koiReleases/road-tmrw.png'
+    },
+    {
+      title: 'Juistreet',
+      descript: 'Inauguração Caxias do Sul',
+      link: 'https://gauchazh.clicrbs.com.br/pioneiro/colunistas/juliana-bevilaqua/noticia/2025/04/bar-de-sucos-de-santa-catarina-chega-a-caxias-do-sul-e-a-primeira-franquia-da-marca-no-rs-cm9ve9bw200x4014dhkokrzwe.html',
+      foto: '/assets/koiReleases/caxias.png'
+    },
+    {
+      title: 'Juistreet',
+      descript: 'Inauguração Porto Alegre ',
+      link: 'https://gauchazh.clicrbs.com.br/colunistas/amanda-souza/noticia/2025/05/medalhista-olimpico-leonardo-goncalves-e-esposa-inauguram-bar-de-sucos-em-porto-alegre-sera-um-sucesso-cmavam85p005t011ggcupyidf.html',
+      foto: '/assets/koiReleases/porto-alegre.png'
+    },
+    {
+      title: 'Zah Empreendimentos',
+      descript: 'Empreendimento Amazônia',
+      link: 'https://www.nsctotal.com.br/colunistas/pedro-machado/fotos-premiado-residencial-boutique-inspirado-na-amazonia-e-lancado-em-sc',
+      foto: '/assets/koiReleases/amazonia.png'
+    },
+  ]
 
   const [paginaAtual, setPaginaAtual] = useState(0);
   const itensPorPagina = 1;
   const totalPaginas = Math.ceil(materias.length / itensPorPagina);
+
+  const [paginaAtualVideo, setPaginaAtualVideo] = useState(0);
+  const itensPorPaginaVideo = 1;
+  const totalPaginasVideo = Math.ceil(videos.length / itensPorPaginaVideo);
+
+  const [paginaAtualFoto, setPaginaAtualFoto] = useState(0);
+  const itensPorPaginaFoto = 1;
+  const totalPaginasFoto = Math.ceil(fotos.length / itensPorPaginaFoto);
+
+  const [paginaAtualRealease, setPaginaAtualRelease] = useState(0);
+  const itensPorPaginaRelease = 1;
+  const totalPaginasRelease = Math.ceil(koiReleases.length / itensPorPaginaRelease);
 
   const materiasPaginadas = materias.slice(
     paginaAtual * itensPorPagina,
     (paginaAtual + 1) * itensPorPagina
   );
 
-  const [paginaAtualVideo, setPaginaAtualVideo] = useState(0);
-  const itensPorPaginaVideo = 1;
-  const totalPaginasVideo = Math.ceil(videos.length / itensPorPaginaVideo);
-
   const VideosPaginados = videos.slice(
     paginaAtualVideo * itensPorPaginaVideo,
     (paginaAtualVideo + 1) * itensPorPaginaVideo
   );
-
-  const [paginaAtualFoto, setPaginaAtualFoto] = useState(0);
-  const itensPorPaginaFoto = 1;
-  const totalPaginasFoto = Math.ceil(fotos.length / itensPorPaginaFoto);
 
   const FotosPaginadas = fotos.slice(
     paginaAtualFoto * itensPorPaginaFoto,
     (paginaAtualFoto + 1) * itensPorPaginaFoto
   );
 
+  const ReleasesPaginadas = koiReleases.slice(
+    paginaAtualRealease * itensPorPaginaRelease,
+    (paginaAtualRealease + 1) * itensPorPaginaRelease
+  );
+
   const [prefeituraHidden, setPrefeituraHidden] = useState(false);
+  const [koiHidden, setKoiHidden] = useState(false);
 
   const handleHiddenPrefeituraProjects = () => {
     setPrefeituraHidden(!prefeituraHidden);
+  }
+  const handleHiddenKoiProjects = () => {
+    setKoiHidden(!koiHidden);
   }
 
   return (
@@ -624,6 +663,51 @@ function ProjetosPage() {
               Foto {paginaAtualFoto + 1} de {totalPaginasFoto}
             </TxtPaginacao>
             <PagBtn onClick={() => setPaginaAtualFoto(paginaAtualFoto + 1)} disabled={paginaAtualFoto === totalPaginasFoto - 1}>
+              Próxima
+            </PagBtn>
+          </Paginacao>
+        </>
+      )}
+
+      {koiHidden ? (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <TxtPaginacao style={{ fontSize: '1.3rem', margin: '.5rem 0' }}>Koi</TxtPaginacao>
+          <IoIosArrowRoundDown onClick={handleHiddenKoiProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
+        </div>
+      ) : (
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <TxtPaginacao style={{ fontSize: '1.3rem', margin: '.5rem 0' }}>Koi</TxtPaginacao>
+          <IoIosArrowRoundForward onClick={handleHiddenKoiProjects} style={{ cursor: 'pointer', fontSize: '1.3rem' }} />
+        </div>
+      )}
+
+      {koiHidden && (
+        <>
+          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Releases</TxtPaginacao>
+
+          {ReleasesPaginadas.map((rel, index) => (
+            <SubcontainerTextsImgProjetos key={index}> {/* row */}
+              <SubcontainerTextsDescriptProjetos> {/* column text */}
+                <TituloTextDescriptProjetos>{rel.title}</TituloTextDescriptProjetos>
+                <TextDefaultProjetos>{rel.descript}</TextDefaultProjetos>
+                <LinkMaterias to={rel.link} target='_blank'>{rel.link}</LinkMaterias>
+              </SubcontainerTextsDescriptProjetos>
+
+              <SubcontainerImgsProjetos> {/* img */}
+                <ImgsProjetos src={rel.foto} />
+              </SubcontainerImgsProjetos>
+
+            </SubcontainerTextsImgProjetos>
+          ))}
+
+          <Paginacao>
+            <PagBtn onClick={() => setPaginaAtualRelease(paginaAtualRealease - 1)} disabled={paginaAtualRealease === 0}>
+              Anterior
+            </PagBtn>
+            <TxtPaginacao>
+              Release {paginaAtualRealease + 1} de {totalPaginasRelease}
+            </TxtPaginacao>
+            <PagBtn onClick={() => setPaginaAtualRelease(paginaAtualRealease + 1)} disabled={paginaAtualRealease === totalPaginasRelease - 1}>
               Próxima
             </PagBtn>
           </Paginacao>
