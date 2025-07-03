@@ -683,7 +683,7 @@ function ProjetosPage() {
 
       {koiHidden && (
         <>
-          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Releases</TxtPaginacao>
+          <TxtPaginacao style={{ fontSize: '1.3rem' }}>Clipping</TxtPaginacao>
 
           {ReleasesPaginadas.map((rel, index) => (
             <SubcontainerTextsImgProjetos key={index}> {/* row */}
