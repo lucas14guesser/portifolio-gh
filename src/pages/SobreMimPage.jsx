@@ -41,7 +41,7 @@ function SobreMimPage() {
 
   const SobreMim = [
     {
-      sobreMim: "Fora do trabalho, sou um padrinho babão, torcedor fanático do melhor time do Sul (fica a seu critério imaginar qual seja hehehe). Gosto muito de tudo que envolve terror, como filmes e séries, mas também curto outros gêneros. Acompanho One Piece como um verdadeiro 'Chapéu de Palha' e minha série preferida é The Walking Dead. Gosto bastante de cerveja e uísque, mas não sou muito chegado às demais bebidas alcoólicas."
+      sobreMim: "Sou bacharel em Jornalismo pela Unisul e atualmente curso pósgraduação em Jornalismo Esportivo e Multimídias, também pela mesma universidade. Atuei por dois anos na área de comunicação institucional e recentemente trabalhei em uma agência de assessoria de imprensa. Tenho experiência em suporte administrativo, produção de releases, atendimento à imprensa, cobertura de eventos, além da criação de roteiros e conteúdos para redes sociais."
     },
   ]
 

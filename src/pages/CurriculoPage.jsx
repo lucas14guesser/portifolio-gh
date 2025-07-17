@@ -48,6 +48,21 @@ function CurriculoPage() {
     },
   ]
 
+  const infoComplementares = [
+    {
+      item: 'Carteira B',
+    },
+    {
+      item: 'Inglês Intermediário',
+    },
+    {
+      item: 'Facilidade com tecnologia',
+    },
+    {
+      item: 'Pacote Office',
+    },
+  ]
+
   const [paginaAtual, setPaginaAtual] = useState(0);
   const itensPorPagina = 1;
   const totalPaginas = Math.ceil(experiencias.length / itensPorPagina);
@@ -130,6 +145,22 @@ function CurriculoPage() {
           Próxima
         </PagBtn>
       </Paginacao>
+
+
+      <div>
+        <TitleCurriculo>Informações complementares</TitleCurriculo> {/* title */}
+      </div>
+      <SubcontainerDataCurriculo>
+        <SubcontainerDataText>
+          {infoComplementares.map((infos, index) => (
+            <ul key={index}>
+              <li>
+                <p>{infos.item}</p>
+              </li>
+            </ul>
+          ))}
+        </SubcontainerDataText>
+      </SubcontainerDataCurriculo>
 
     </ContainerCurriculoPage>
   )
