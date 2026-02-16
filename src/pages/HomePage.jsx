@@ -35,11 +35,10 @@ function HomePage() {
                 <SubcontainerBtn> {/* container row*/}
                     <BtnDefault to='/curriculo'>Currículo</BtnDefault>
                     <BtnDefault to='/projetos'>Projetos</BtnDefault>
-                    <BtnDefault to='/sobre-mim'>Sobre mim</BtnDefault>
                 </SubcontainerBtn>
 
                 <TextHomeDescript>
-                    Oi! Tudo bem? Meu nome é Guilherme Henrique Souza, mas pode me chamar de Gui. Tenho 22 anos, sou bacharel em Jornalismo pela Unisul e atualmente curso pós-graduação em Jornalismo Esportivo e Multimídias, também pela mesma universidade. Atuei por dois anos na área de comunicação institucional e recentemente trabalhei em uma agência de assessoria de imprensa. Tenho experiência em suporte administrativo, produção de releases, atendimento à imprensa, cobertura de eventos, além da criação de roteiros e conteúdos para redes sociais.
+                  Oi! Tudo bem? Me chamo Guilherme Henrique Souza, mas pode me chamar de Gui ou Guizão. Sou formado em Jornalismo pela Unisul e faço pós-graduação em Jornalismo Esportivo e Multimídias na mesma universidade. Atuo na área desde 2023, com passagem pela comunicação institucional e assessoria de imprensa nos setores público e privado. Tenho experiência na elaboração de releases, contato com veículos e jornalistas, cobertura de eventos e desenvolvimento de conteúdos para redes sociais. Estou disponível para atuar como PJ ou para integrar a equipe de comunicação da sua empresa, contribuindo para ampliar a presença digital e fortalecer seu posicionamento por meio de estratégias de comunicação.
                 </TextHomeDescript>
             </SubcontainerDescript>
         </ContainerHomePage>

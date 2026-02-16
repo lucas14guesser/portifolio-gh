@@ -14,9 +14,6 @@ function NavBar() {
                 <LinkItemLista to='/projetos'>
                     <ItemListaNav>Projetos</ItemListaNav>
                 </LinkItemLista>
-                <LinkItemLista to='/sobre-mim'>
-                    <ItemListaNav>Sobre mim</ItemListaNav>
-                </LinkItemLista>
             </ListaNav>
         </ContainerNavBar>
     )
