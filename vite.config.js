@@ -12,7 +12,6 @@ export default defineConfig({
         homePage: resolve(__dirname, './src/pages/HomePage.jsx'),
         curriculoPage: resolve(__dirname, './src/pages/CurriculoPage.jsx'),
         projetosPage: resolve(__dirname, './src/pages/ProjetosPage.jsx'),
-        sobreMimPage: resolve(__dirname, './src/pages/SobreMimPage.jsx'),
       }
     }
   }
